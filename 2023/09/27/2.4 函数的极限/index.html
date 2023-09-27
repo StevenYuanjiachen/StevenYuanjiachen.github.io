@@ -20,12 +20,12 @@
     var CONFIG = {"hostname":"stevenyuanjiachen.github.io","root":"/","scheme":"Mist","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="2.4.1 函数极限的定义 函数极限的定义设 $f(x)$ 在点 a 的一个去心邻域内有定义，若存在实数 A ，$\forall\ \epsilon&gt;0\ ,\ \exists\ \delta&gt;0,$得当$0&lt;\mid x-a \mid &lt;\delta$时，$\mid f(x)-a \mid &lt; \epsilon$ ，则称当x趋向于点a时，函数的极限为A，或收敛于 A">
+  <meta name="description" content="2.4.1 函数极限的定义  函数极限的定义 设 \(f(x)\) 在点 a 的一个去心邻域内有定义，若存在实数 A ，\(\forall\ \epsilon&gt;0\ ,\ \exists\ \delta&gt;0,\)得当\(0&lt;\mid x-a \mid &lt;\delta\)时，\(\mid f(x)-a \mid &lt; \epsilon\) ，则称当x趋向于">
 <meta property="og:type" content="article">
 <meta property="og:title" content="函数的极限">
 <meta property="og:url" content="https://stevenyuanjiachen.github.io/2023/09/27/2.4%20%E5%87%BD%E6%95%B0%E7%9A%84%E6%9E%81%E9%99%90/index.html">
 <meta property="og:site_name" content="JC小站">
-<meta property="og:description" content="2.4.1 函数极限的定义 函数极限的定义设 $f(x)$ 在点 a 的一个去心邻域内有定义，若存在实数 A ，$\forall\ \epsilon&gt;0\ ,\ \exists\ \delta&gt;0,$得当$0&lt;\mid x-a \mid &lt;\delta$时，$\mid f(x)-a \mid &lt; \epsilon$ ，则称当x趋向于点a时，函数的极限为A，或收敛于 A">
+<meta property="og:description" content="2.4.1 函数极限的定义  函数极限的定义 设 \(f(x)\) 在点 a 的一个去心邻域内有定义，若存在实数 A ，\(\forall\ \epsilon&gt;0\ ,\ \exists\ \delta&gt;0,\)得当\(0&lt;\mid x-a \mid &lt;\delta\)时，\(\mid f(x)-a \mid &lt; \epsilon\) ，则称当x趋向于">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2023-09-27T15:24:42.000Z">
 <meta property="article:modified_time" content="2023-09-27T16:06:22.132Z">
@@ -209,86 +209,162 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <h3 id="2-4-1-函数极限的定义"><a href="#2-4-1-函数极限的定义" class="headerlink" title="2.4.1 函数极限的定义"></a>2.4.1 函数极限的定义</h3><hr>
-<h4 id="函数极限的定义"><a href="#函数极限的定义" class="headerlink" title="函数极限的定义"></a>函数极限的定义</h4><p>设 $f(x)$ 在点 a 的一个去心邻域内有定义，若存在实数 A ，$\forall\ \epsilon&gt;0\ ,\ \exists\ \delta&gt;0,$得当$0&lt;\mid x-a \mid &lt;\delta$时，$\mid f(x)-a \mid &lt; \epsilon$ ，则称当x趋向于点a时，函数的<font color="#8B6CEF">极限</font>为A，或<font color="#8B6CEF">收敛</font>于 A。</p>
-<h4 id="单侧极限的定义"><a href="#单侧极限的定义" class="headerlink" title="单侧极限的定义"></a>单侧极限的定义</h4><p>设函数 $f(x)$ 在点a的一个右邻域 $(a,a+\delta_{0})$ 内有定义，若存在实数 A，$\forall \epsilon&gt;0, \exists \delta&gt;0 (\delta&lt;\delta_{0})$ ，使得当 $a&lt;x&lt;a+\delta$ 时，$|f(x)-A|&lt;\epsilon$ 则称函数 $f(x)$ 在 a 的右极限为 A，记为<br>$$\underset{x\rightarrow a^+}{lim} f(x)&#x3D;A\ \ \ \  或 \ \ \ f(a+0)&#x3D;A$$</p>
-<h4 id="海涅-Heine-定理"><a href="#海涅-Heine-定理" class="headerlink" title="海涅(Heine)定理"></a>海涅(Heine)定理</h4><p>$\underset{x\rightarrow a} {lim}f(x)＝ A$ 的<font color="#8B6CEF">充分必要条件</font>为：对于任一满足 $\underset{x \rightarrow \infty}{lim}x_{n} &#x3D; a$ 且 $x_{n} \ne a$ 的数列 {${x_{n}}$} 均有  $\underset{x\rightarrow a} {lim}f(x_{n})＝ A$</p>
+        <h3 id="函数极限的定义">2.4.1 函数极限的定义</h3>
+<hr />
+<h4 id="函数极限的定义-1">函数极限的定义</h4>
+<p>设 <span class="math inline">\(f(x)\)</span> 在点 a
+的一个去心邻域内有定义，若存在实数 A ，<span
+class="math inline">\(\forall\ \epsilon&gt;0\ ,\ \exists\
+\delta&gt;0,\)</span>得当<span class="math inline">\(0&lt;\mid x-a \mid
+&lt;\delta\)</span>时，<span class="math inline">\(\mid f(x)-a \mid &lt;
+\epsilon\)</span>
+，则称当x趋向于点a时，函数的<font color="#8B6CEF">极限</font>为A，或<font color="#8B6CEF">收敛</font>于
+A。</p>
+<h4 id="单侧极限的定义">单侧极限的定义</h4>
+<p>设函数 <span class="math inline">\(f(x)\)</span> 在点a的一个右邻域
+<span class="math inline">\((a,a+\delta_{0})\)</span>
+内有定义，若存在实数 A，<span class="math inline">\(\forall
+\epsilon&gt;0, \exists \delta&gt;0 (\delta&lt;\delta_{0})\)</span>
+，使得当 <span class="math inline">\(a&lt;x&lt;a+\delta\)</span>
+时，<span class="math inline">\(|f(x)-A|&lt;\epsilon\)</span> 则称函数
+<span class="math inline">\(f(x)\)</span> 在 a 的右极限为 A，记为 <span
+class="math display">\[\underset{x\rightarrow a^+}{lim} f(x)=A\ \ \
+\  或 \ \ \ f(a+0)=A\]</span></p>
+<h4 id="海涅heine定理">海涅(Heine)定理</h4>
+<p><span class="math inline">\(\underset{x\rightarrow a} {lim}f(x)＝
+A\)</span> 的<font color="#8B6CEF">充分必要条件</font>为：对于任一满足
+<span class="math inline">\(\underset{x \rightarrow \infty}{lim}x_{n} =
+a\)</span> 且 <span class="math inline">\(x_{n} \ne a\)</span> 的数列
+{<span class="math inline">\({x_{n}}\)</span>} 均有 <span
+class="math inline">\(\underset{x\rightarrow a} {lim}f(x_{n})＝
+A\)</span></p>
 <ul>
-<li><p>海涅定理表明：“自变量以任意离散形式 $x_{n}$ 趋于a时，对应的函数值数列 $f(x_{n})$ 都趋于A”</p>
-</li>
-<li><p>其建立了函数极限与数列极限之间的桥梁，利用它可以将数列极限的许多性质平移到函数极限</p>
-</li>
-<li><p>也常用来判定函数极限是否存在或者函数是否为$\infty$</p>
-</li>
+<li><p>海涅定理表明：“自变量以任意离散形式 <span
+class="math inline">\(x_{n}\)</span> 趋于a时，对应的函数值数列 <span
+class="math inline">\(f(x_{n})\)</span> 都趋于A”</p></li>
+<li><p>其建立了函数极限与数列极限之间的桥梁，利用它可以将数列极限的许多性质平移到函数极限</p></li>
+<li><p>也常用来判定函数极限是否存在或者函数是否为<span
+class="math inline">\(\infty\)</span></p></li>
 </ul>
-<br>
-<br>
-
-<h3 id="2-4-2-函数极限的性质、运算法则和判别法"><a href="#2-4-2-函数极限的性质、运算法则和判别法" class="headerlink" title="2.4.2 函数极限的性质、运算法则和判别法"></a>2.4.2 函数极限的性质、运算法则和判别法</h3><hr>
-<h4 id="函数极限的性质"><a href="#函数极限的性质" class="headerlink" title="函数极限的性质"></a>函数极限的性质</h4><ol>
-<li><p><strong>唯一性</strong>  </p>
-<p>若 $\underset{x\rightarrow a}{lim}\ f(x)&#x3D;A$ 且 $\underset{x\rightarrow a}{lim}\ f(x)&#x3D;B$ ，则 $A＝B$<br><strong>证明：</strong> 海涅定理  </p>
-</li>
+<p><br> <br></p>
+<h3 id="函数极限的性质运算法则和判别法">2.4.2
+函数极限的性质、运算法则和判别法</h3>
+<hr />
+<h4 id="函数极限的性质">函数极限的性质</h4>
+<ol type="1">
+<li><p><strong>唯一性</strong></p>
+<p>若 <span class="math inline">\(\underset{x\rightarrow a}{lim}\
+f(x)=A\)</span> 且 <span class="math inline">\(\underset{x\rightarrow
+a}{lim}\ f(x)=B\)</span> ，则 <span class="math inline">\(A＝B\)</span>
+<strong>证明：</strong> 海涅定理</p></li>
 <li><p><strong>局部有界性</strong></p>
-<p>由 $\underset{x\rightarrow \infty}{lim}\ f(x_{n})&#x3D;A$ ,则 $\exists\delta &gt;0$, 使得 $f(x)$ 在 $\mathring{U}(a,\delta)$ 内有界。</p>
-</li>
-</ol>
-<p>  <strong>证明：</strong>  同数列</p>
-<ol start="3">
+<p>由 <span class="math inline">\(\underset{x\rightarrow \infty}{lim}\
+f(x_{n})=A\)</span> ,则 <span class="math inline">\(\exists\delta
+&gt;0\)</span>, 使得 <span class="math inline">\(f(x)\)</span> 在 <span
+class="math inline">\(\mathring{U}(a,\delta)\)</span> 内有界。
+<strong>证明：</strong> 同数列</p></li>
 <li><p><strong>局部保序性</strong></p>
-<p>设 $\underset{x\rightarrow a}{lim}\ f(x)&#x3D;A$  ，$\underset{x\rightarrow a}{lim}\ g(x)&#x3D;B$ ，且 $A&gt;B$ ，则 $\exists \delta&gt;0$，当 $x\in \mathring{U}(a,\delta)$ 时$$f(x)&gt;g(x)$$<br><strong>推论1：局部保号性</strong> </p>
-<p>若 $\underset{x\rightarrow a}{lim}\ f(x)&#x3D;A$ ，$A&gt;0$ ，则 $\exists\delta&gt;0$ ，当$x\in\mathring{U}(a,\delta)$ 时$$f(x)&gt;\frac{A}{2}&gt;0$$</p>
-<p><strong>推论2</strong><br>若 $\exists\delta&gt;0$，当$x\in\mathring{U}(a,\delta)$时，有 $f(x)\geqslant0$，且 $\underset{x\rightarrow a}{lim}\ f(x)&#x3D;A$，则$$A\geqslant0$$</p>
-</li>
+<p>设 <span class="math inline">\(\underset{x\rightarrow a}{lim}\
+f(x)=A\)</span> ，<span class="math inline">\(\underset{x\rightarrow
+a}{lim}\ g(x)=B\)</span> ，且 <span
+class="math inline">\(A&gt;B\)</span> ，则 <span
+class="math inline">\(\exists \delta&gt;0\)</span>，当 <span
+class="math inline">\(x\in \mathring{U}(a,\delta)\)</span> 时<span
+class="math display">\[f(x)&gt;g(x)\]</span>
+<strong>推论1：局部保号性</strong></p>
+<p>若 <span class="math inline">\(\underset{x\rightarrow a}{lim}\
+f(x)=A\)</span> ，<span class="math inline">\(A&gt;0\)</span> ，则 <span
+class="math inline">\(\exists\delta&gt;0\)</span> ，当<span
+class="math inline">\(x\in\mathring{U}(a,\delta)\)</span> 时<span
+class="math display">\[f(x)&gt;\frac{A}{2}&gt;0\]</span></p>
+<p><strong>推论2</strong> 若 <span
+class="math inline">\(\exists\delta&gt;0\)</span>，当<span
+class="math inline">\(x\in\mathring{U}(a,\delta)\)</span>时，有 <span
+class="math inline">\(f(x)\geqslant0\)</span>，且 <span
+class="math inline">\(\underset{x\rightarrow a}{lim}\
+f(x)=A\)</span>，则<span
+class="math display">\[A\geqslant0\]</span></p></li>
 </ol>
-<h4 id="函数极限的运算法则"><a href="#函数极限的运算法则" class="headerlink" title="函数极限的运算法则"></a>函数极限的运算法则</h4><p>   主要同数列  </p>
-<p>   <strong>复合函数的极限运算定理</strong>  若 $\underset{u\rightarrow b}{lim}\ f(u)&#x3D;A$， $\underset{x\rightarrow a}{lim}\ \varphi  (x)&#x3D;b$，且当$x\in\mathring{U}(a)$时，$\varphi  (x)\ne b$，则$$\underset{x\rightarrow a}{lim}\ f\ [\ \varphi(x)\ ]&#x3D;A$$<br>   注：其中 a 和 b 都可以是 $\infty$<br><br></p>
-<p>   <strong>例题</strong>  </p>
-<ol>
-<li><p>$\underset{x\rightarrow \infty} {lim}(3x-\sqrt{ax^{2}+bx+1})\ &#x3D;2$ 求 a , b ?  </p>
-</li>
-<li><p>$\underset{x\rightarrow -\infty} {lim}\frac{\sqrt{4x^{2}+x+3}-x+4}{\sqrt{x^{2}+\sin\ x}}$  </p>
-</li>
-<li><p>$\underset{x\rightarrow 4} {lim}\frac{x^{2}-6x+8}{x^{2}-5x+4}$ </p>
-</li>
-<li><p>$\underset{x\rightarrow0}{lim}\frac{\sqrt{x+1}-1}{x}$</p>
-</li>
+<h4 id="函数极限的运算法则">函数极限的运算法则</h4>
+<p>主要同数列</p>
+<p><strong>复合函数的极限运算定理</strong> 若 <span
+class="math inline">\(\underset{u\rightarrow b}{lim}\ f(u)=A\)</span>，
+<span class="math inline">\(\underset{x\rightarrow a}{lim}\ \varphi
+(x)=b\)</span>，且当<span
+class="math inline">\(x\in\mathring{U}(a)\)</span>时，<span
+class="math inline">\(\varphi (x)\ne b\)</span>，则<span
+class="math display">\[\underset{x\rightarrow a}{lim}\ f\ [\ \varphi(x)\
+]=A\]</span> 注：其中 a 和 b 都可以是 <span
+class="math inline">\(\infty\)</span> <br></p>
+<p><strong>例题</strong><br />
+1. <span class="math inline">\(\underset{x\rightarrow \infty}
+{lim}(3x-\sqrt{ax^{2}+bx+1})\ =2\)</span> 求 a , b ?</p>
+<ol start="2" type="1">
+<li><p><span class="math inline">\(\underset{x\rightarrow -\infty}
+{lim}\frac{\sqrt{4x^{2}+x+3}-x+4}{\sqrt{x^{2}+\sin\
+x}}\)</span></p></li>
+<li><p><span class="math inline">\(\underset{x\rightarrow 4}
+{lim}\frac{x^{2}-6x+8}{x^{2}-5x+4}\)</span></p></li>
+<li><p><span
+class="math inline">\(\underset{x\rightarrow0}{lim}\frac{\sqrt{x+1}-1}{x}\)</span></p></li>
 </ol>
-<h4 id="函数极限的判定"><a href="#函数极限的判定" class="headerlink" title="函数极限的判定"></a>函数极限的判定</h4><p>   <strong>判定方法1.</strong> 单调有界有极限<br>   <strong>判定方法2.</strong> 夹逼原理<br><br><br><br></p>
-<h3 id="2-4-3-两个重要极限"><a href="#2-4-3-两个重要极限" class="headerlink" title="2.4.3 两个重要极限"></a>2.4.3 两个重要极限</h3><hr>
+<h4 id="函数极限的判定">函数极限的判定</h4>
+<p><strong>判定方法1.</strong> 单调有界有极限<br />
+<strong>判定方法2.</strong> 夹逼原理 <br> <br></p>
+<h3 id="两个重要极限">2.4.3 两个重要极限</h3>
+<hr />
 <p>这里介绍的两个极限是夹逼定理的应用，他们在微积分的运算中起着十分基本的作用</p>
-<h4 id="1-underset-x-rightarrow0-lim-frac-sin-x-x-0"><a href="#1-underset-x-rightarrow0-lim-frac-sin-x-x-0" class="headerlink" title="1.  $\underset{x\rightarrow0}{lim}\frac{\sin x}{x}&#x3D;0$"></a>1.  $\underset{x\rightarrow0}{lim}\frac{\sin x}{x}&#x3D;0$</h4><p><strong>推论:</strong> 当 $x\rightarrow0$ 时,有      $\tan\ x \ &#x3D;\  \sin\ x \ &#x3D;\  x \ &#x3D;\  \arctan\ x \ &#x3D;\  \arcsin\ x$</p>
+<h4 id="undersetxrightarrow0limfracsin-xx0">1. <span
+class="math inline">\(\underset{x\rightarrow0}{lim}\frac{\sin
+x}{x}=0\)</span></h4>
+<p><strong>推论:</strong> 当 <span
+class="math inline">\(x\rightarrow0\)</span> 时,有 <span
+class="math inline">\(\tan\ x \ =\  \sin\ x \ =\  x \ =\  \arctan\ x \
+=\  \arcsin\ x\)</span></p>
 <p><strong>例题</strong></p>
-<ol>
-<li><p>$\underset{x\rightarrow0}{lim}\frac{1-\cos\ x}{x^2}$   &#x3D;&gt;    当 $x\rightarrow 0$ 时，$\cos x&#x3D;1-\frac{x^2}{2}$ </p>
-</li>
-<li><p>$\underset{x\rightarrow a}{lim}\frac{sin x - sin a}{x-a}$</p>
-</li>
+<ol type="1">
+<li><p><span
+class="math inline">\(\underset{x\rightarrow0}{lim}\frac{1-\cos\
+x}{x^2}\)</span> =&gt; 当 <span class="math inline">\(x\rightarrow
+0\)</span> 时，<span class="math inline">\(\cos
+x=1-\frac{x^2}{2}\)</span></p></li>
+<li><p><span class="math inline">\(\underset{x\rightarrow
+a}{lim}\frac{sin x - sin a}{x-a}\)</span></p></li>
 </ol>
-<h4 id="2-underset-x-rightarrow-infty-lim-1-frac-1-x-x-e"><a href="#2-underset-x-rightarrow-infty-lim-1-frac-1-x-x-e" class="headerlink" title="2.  $\underset{x\rightarrow \infty }{lim}(1+\frac{1}{x})^x&#x3D;e$"></a>2.  $\underset{x\rightarrow \infty }{lim}(1+\frac{1}{x})^x&#x3D;e$</h4><p>   <strong>证明：</strong> 夹逼原理 &amp;&amp; [x] $\leqslant$ x $\leqslant$ [x]+1</p>
+<h4 id="undersetxrightarrow-infty-lim1frac1xxe">2. <span
+class="math inline">\(\underset{x\rightarrow \infty
+}{lim}(1+\frac{1}{x})^x=e\)</span></h4>
+<p><strong>证明：</strong> 夹逼原理 &amp;&amp; [x] <span
+class="math inline">\(\leqslant\)</span> x <span
+class="math inline">\(\leqslant\)</span> [x]+1</p>
 <p><strong>例题</strong></p>
-<ol>
-<li><p>$\underset{x\rightarrow \infty}{lim}\ (1+\frac{2}{x})^{x+3}$</p>
-</li>
-<li><p>$\underset{x\rightarrow0}{lim}\ (1+x)^{\frac{1}{x}}$</p>
-</li>
-<li><p>$\underset{x\rightarrow \infty}{lim}\ (\frac{2x-1}{2x+1})^x$</p>
-</li>
-<li><p>$\underset{x\rightarrow0}{lim}\ (\cos\ x)^{\frac{1}{x^2}}$ </p>
-</li>
-<li><p>$\underset{x\rightarrow0}{lim}\ \frac{ln(1+x)}{x}$</p>
-</li>
-<li><p>$\underset{x\rightarrow0}{lim}\ \frac{e^x-1}{x}$</p>
-</li>
+<ol type="1">
+<li><p><span class="math inline">\(\underset{x\rightarrow \infty}{lim}\
+(1+\frac{2}{x})^{x+3}\)</span></p></li>
+<li><p><span class="math inline">\(\underset{x\rightarrow0}{lim}\
+(1+x)^{\frac{1}{x}}\)</span></p></li>
+<li><p><span class="math inline">\(\underset{x\rightarrow \infty}{lim}\
+(\frac{2x-1}{2x+1})^x\)</span></p></li>
+<li><p><span class="math inline">\(\underset{x\rightarrow0}{lim}\ (\cos\
+x)^{\frac{1}{x^2}}\)</span></p></li>
+<li><p><span class="math inline">\(\underset{x\rightarrow0}{lim}\
+\frac{ln(1+x)}{x}\)</span></p></li>
+<li><p><span class="math inline">\(\underset{x\rightarrow0}{lim}\
+\frac{e^x-1}{x}\)</span></p></li>
 </ol>
-<br>
-<br>
-
-<h3 id="2-4-4-无穷小的比较"><a href="#2-4-4-无穷小的比较" class="headerlink" title="2.4.4 无穷小的比较"></a>2.4.4 无穷小的比较</h3><hr>
-<h4 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h4><ul>
-<li><strong>高阶无穷小</strong> $\beta(x)&#x3D;o(\alpha(x))\ \ (x\rightarrow a)$</li>
-<li><strong>同阶无穷小</strong> $\beta(x)&#x3D;O(\alpha(x))\ \ (x\rightarrow a)$</li>
-<li><strong>等价无穷小</strong> $\beta(x) \sim \alpha(x))\ \ (x\rightarrow a)$</li>
+<p><br> <br></p>
+<h3 id="无穷小的比较">2.4.4 无穷小的比较</h3>
+<hr />
+<h4 id="定义">定义</h4>
+<ul>
+<li><strong>高阶无穷小</strong> <span
+class="math inline">\(\beta(x)=o(\alpha(x))\ \ (x\rightarrow
+a)\)</span></li>
+<li><strong>同阶无穷小</strong> <span
+class="math inline">\(\beta(x)=O(\alpha(x))\ \ (x\rightarrow
+a)\)</span></li>
+<li><strong>等价无穷小</strong> <span class="math inline">\(\beta(x)
+\sim \alpha(x))\ \ (x\rightarrow a)\)</span></li>
 </ul>
 <p>注：</p>
 <ul>
@@ -371,7 +447,10 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4-1-%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="nav-number">1.</span> <span class="nav-text">2.4.1 函数极限的定义</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="nav-number">1.1.</span> <span class="nav-text">函数极限的定义</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8D%95%E4%BE%A7%E6%9E%81%E9%99%90%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="nav-number">1.2.</span> <span class="nav-text">单侧极限的定义</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%B5%B7%E6%B6%85-Heine-%E5%AE%9A%E7%90%86"><span class="nav-number">1.3.</span> <span class="nav-text">海涅(Heine)定理</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4-2-%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90%E7%9A%84%E6%80%A7%E8%B4%A8%E3%80%81%E8%BF%90%E7%AE%97%E6%B3%95%E5%88%99%E5%92%8C%E5%88%A4%E5%88%AB%E6%B3%95"><span class="nav-number">2.</span> <span class="nav-text">2.4.2 函数极限的性质、运算法则和判别法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90%E7%9A%84%E6%80%A7%E8%B4%A8"><span class="nav-number">2.1.</span> <span class="nav-text">函数极限的性质</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90%E7%9A%84%E8%BF%90%E7%AE%97%E6%B3%95%E5%88%99"><span class="nav-number">2.2.</span> <span class="nav-text">函数极限的运算法则</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90%E7%9A%84%E5%88%A4%E5%AE%9A"><span class="nav-number">2.3.</span> <span class="nav-text">函数极限的判定</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4-3-%E4%B8%A4%E4%B8%AA%E9%87%8D%E8%A6%81%E6%9E%81%E9%99%90"><span class="nav-number">3.</span> <span class="nav-text">2.4.3 两个重要极限</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#1-underset-x-rightarrow0-lim-frac-sin-x-x-0"><span class="nav-number">3.1.</span> <span class="nav-text">1.  $\underset{x\rightarrow0}{lim}\frac{\sin x}{x}&#x3D;0$</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#2-underset-x-rightarrow-infty-lim-1-frac-1-x-x-e"><span class="nav-number">3.2.</span> <span class="nav-text">2.  $\underset{x\rightarrow \infty }{lim}(1+\frac{1}{x})^x&#x3D;e$</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2-4-4-%E6%97%A0%E7%A9%B7%E5%B0%8F%E7%9A%84%E6%AF%94%E8%BE%83"><span class="nav-number">4.</span> <span class="nav-text">2.4.4 无穷小的比较</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%9A%E4%B9%89"><span class="nav-number">4.1.</span> <span class="nav-text">定义</span></a></li></ol></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="nav-text">2.4.1 函数极限的定义</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90%E7%9A%84%E5%AE%9A%E4%B9%89-1"><span class="nav-text">函数极限的定义</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%8D%95%E4%BE%A7%E6%9E%81%E9%99%90%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="nav-text">单侧极限的定义</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E6%B5%B7%E6%B6%85heine%E5%AE%9A%E7%90%86"><span class="nav-text">海涅(Heine)定理</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90%E7%9A%84%E6%80%A7%E8%B4%A8%E8%BF%90%E7%AE%97%E6%B3%95%E5%88%99%E5%92%8C%E5%88%A4%E5%88%AB%E6%B3%95"><span class="nav-text">2.4.2
+函数极限的性质、运算法则和判别法</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90%E7%9A%84%E6%80%A7%E8%B4%A8"><span class="nav-text">函数极限的性质</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90%E7%9A%84%E8%BF%90%E7%AE%97%E6%B3%95%E5%88%99"><span class="nav-text">函数极限的运算法则</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%87%BD%E6%95%B0%E6%9E%81%E9%99%90%E7%9A%84%E5%88%A4%E5%AE%9A"><span class="nav-text">函数极限的判定</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E4%B8%A4%E4%B8%AA%E9%87%8D%E8%A6%81%E6%9E%81%E9%99%90"><span class="nav-text">2.4.3 两个重要极限</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#undersetxrightarrow0limfracsin-xx0"><span class="nav-text">1. \(\underset{x\rightarrow0}{lim}\frac{\sin
+x}{x}&#x3D;0\)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#undersetxrightarrow-infty-lim1frac1xxe"><span class="nav-text">2. \(\underset{x\rightarrow \infty
+}{lim}(1+\frac{1}{x})^x&#x3D;e\)</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E6%97%A0%E7%A9%B7%E5%B0%8F%E7%9A%84%E6%AF%94%E8%BE%83"><span class="nav-text">2.4.4 无穷小的比较</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AE%9A%E4%B9%89"><span class="nav-text">定义</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
