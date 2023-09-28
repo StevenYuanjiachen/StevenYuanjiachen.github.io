@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 6.3.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"stevenyuanjiachen.github.io","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="1. 字符数组的定义格式  同一般数组，第一个依然由chr[0]开始">
+<meta property="og:type" content="article">
+<meta property="og:title" content="字符数组">
+<meta property="og:url" content="https://stevenyuanjiachen.github.io/2023/09/28/%E7%AC%94%E8%AE%B0%E5%8C%BA/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AC%94%E8%AE%B0/1.%20%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E5%AD%97%E7%AC%A6%E6%95%B0%E7%BB%84/index.html">
+<meta property="og:site_name" content="茅草屋">
+<meta property="og:description" content="1. 字符数组的定义格式  同一般数组，第一个依然由chr[0]开始">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2023-09-28T08:28:50.000Z">
+<meta property="article:modified_time" content="2023-09-28T08:56:41.343Z">
+<meta property="article:author" content="Steven Yuan">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://stevenyuanjiachen.github.io/2023/09/28/%E7%AC%94%E8%AE%B0%E5%8C%BA/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AC%94%E8%AE%B0/1.%20%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E5%AD%97%E7%AC%A6%E6%95%B0%E7%BB%84/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>字符数组 | 茅草屋</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+<style>mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+.MathJax path {
+  stroke-width: 3;
+}
+
+mjx-container[display="true"] {
+  overflow: auto hidden;
+}
+
+mjx-container[display="true"] + br {
+  display: none;
+}
+</style></head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">茅草屋</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-fw fa-tags"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-about">
+
+    <a href="/about/" rel="section"><i class="fa fa-fw fa-user"></i>关于</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://stevenyuanjiachen.github.io/2023/09/28/%E7%AC%94%E8%AE%B0%E5%8C%BA/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AC%94%E8%AE%B0/1.%20%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E5%AD%97%E7%AC%A6%E6%95%B0%E7%BB%84/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Steven Yuan">
+      <meta itemprop="description" content="Time will bring a surprise, if you belive.">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="茅草屋">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          字符数组
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+              
+
+              <time title="创建时间：2023-09-28 16:28:50 / 修改时间：16:56:41" itemprop="dateCreated datePublished" datetime="2023-09-28T16:28:50+08:00">2023-09-28</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%AC%94%E8%AE%B0%E5%8C%BA/" itemprop="url" rel="index"><span itemprop="name">笔记区</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%AC%94%E8%AE%B0%E5%8C%BA/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1-C-%E7%AC%94%E8%AE%B0/" itemprop="url" rel="index"><span itemprop="name">程序设计(C++)笔记</span></a>
+                </span>
+                  ，
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E7%AC%94%E8%AE%B0%E5%8C%BA/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1-C-%E7%AC%94%E8%AE%B0/1-%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/" itemprop="url" rel="index"><span itemprop="name">1. 基础知识</span></a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <h3 id="字符数组的定义格式">1. 字符数组的定义格式</h3>
+<hr>
+<p>同一般数组，第一个依然由chr[0]开始</p>
+<span id="more"></span>
+<p><br> <br></p>
+<h3 id="字符数组的赋值">2. 字符数组的赋值</h3>
+<hr>
+<ul>
+<li>一般的赋值同一维数组</li>
+<li>字符数组中可以放若干字符，也可以放字符串。两者的区别是字符串有一个结束符
+<code>'\0'</code>
+。因此可以说，<font color="8B6CEF">字符串是一维数组，但一维字符数组不等于字符串</font></li>
+<li>用字符串给数组初始化如下 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">char</span> chr[<span class="number">10</span>]=<span class="string">"abc"</span>;</span><br></pre></td></tr></table></figure></li>
+<li>字符常量占一个字节，而字符串常量占用的字节数等于字符串的字节数＋1，用来存放
+<code>'\0'</code></li>
+</ul>
+<p><br></p>
+<h3 id="字符串的输入与输出">3. 字符串的输入与输出</h3>
+<hr>
+<h4 id="字符串的输入">1. 字符串的输入</h4>
+<ol type="1">
+<li><code>scanf</code> 语句 格式：<code>scanf("%s" , 字符串名称);</code>
+<strong>注</strong>：</li>
+</ol>
+<ul>
+<li>不用加寻址符，但加了也无所谓，统一加上方便记</li>
+<li>系统自动在结尾处添加<code>'\0'</code>标志</li>
+<li><font color="8B6CEF">读到空格为止</font>，因此<font color="8B6CEF">可以用空格分隔</font></li>
+</ul>
+<ol start="2" type="1">
+<li><code>gets</code> 语句 格式：<code>gets(字符串名称)</code>
+<strong>注：</strong></li>
+</ol>
+<ul>
+<li>只能输入一个字符串</li>
+<li><font color="8B6CEF">读到换行为止</font></li>
+</ul>
+<h4 id="字符串的输出">2. 字符串的输出</h4>
+<ol type="1">
+<li><code>printf</code> 语句
+格式：<code>printf("%s",字符串名称);</code><br>
+<strong>注：</strong></li>
+</ol>
+<ul>
+<li>用<code>％s</code>
+格式输出时，printf()的输出项只能是<font color="8B6CEF">字符串（数组名称）</font>，而不能是数组元素</li>
+<li>输出的字符串不包括结束符</li>
+</ul>
+<ol start="2" type="1">
+<li><code>puts</code> 语句 格式：<code>puts(字符串名称);</code>
+<strong>注：</strong></li>
+</ol>
+<ul>
+<li><code>puts</code> 语句输出一个字符串和一个换行符</li>
+<li>对于一个已经声明的字符串a，<code>printf("%s\n",a)</code> 和
+<code>puts(a)</code> 是<font color="8B6CEF">等价</font>的</li>
+</ul>
+<h4 id="这里有字符串输入输出的一些奇妙方法"><em>3.
+这里有字符串输入输出的一些奇妙方法</em></h4>
+<h5 id="第一种-whilegetchar">第一种 while+getchar()</h5>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">char</span> st[<span class="number">200</span>];</span><br><span class="line"><span class="type">int</span> n=<span class="number">0</span>;</span><br><span class="line"><span class="keyword">while</span>((st[n++]=<span class="built_in">getchar</span>())!=<span class="string">'\n'</span>) <span class="comment">//这里的'\n'，可以换成空格</span></span><br></pre></td></tr></table></figure>
+<ul>
+<li>这样输入可以直接得到字符串的长度，并且可以自定义结束符，优雅！ #####
+第二种 while+scanf() <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">char</span> str[<span class="number">200</span>];</span><br><span class="line"><span class="keyword">while</span>(<span class="built_in">scanf</span>(<span class="string">"%s"</span>,&amp;st)==<span class="number">1</span>)</span><br></pre></td></tr></table></figure></li>
+<li><code>scanf()</code>
+不读空格，那么相当于每一个空格的位置就会自动加上一个<code>'\0'</code>
+，就相当于<font color="8B6CEF">在一个数组里存了多个字符串</font></li>
+<li>输出的话如下 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">printf</span>(<span class="string">"%s "</span>,str);<span class="comment">//%s 后面加一个空格</span></span><br></pre></td></tr></table></figure> <br> <br></li>
+</ul>
+<h3 id="字符串处理函数">5. 字符串处理函数</h3>
+<hr>
+<p>常用的字符串处理函数如下</p>
+<table>
+<colgroup>
+<col style="width: 44%">
+<col style="width: 55%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>函数格式</th>
+<th>函数功能</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>strcat(str1,str2)</td>
+<td>将 str2 连接到 str1 后面，返回 str1 的值</td>
+</tr>
+<tr class="even">
+<td>strncat(str1, str2, n)</td>
+<td>将 str2 的n个字符连接到 str1 后面，返回str1的值</td>
+</tr>
+<tr class="odd">
+<td>strcpy(str1,str2)</td>
+<td>将 str2 复制到 str1 ,返回 str1 的值</td>
+</tr>
+<tr class="even">
+<td>strncpy(str1,str2,n)</td>
+<td>逻辑同 strncat</td>
+</tr>
+<tr class="odd">
+<td>strcmp(str1,str2)</td>
+<td>比较 str1 和 str2
+的大小，返回一个值<br>如果1&gt;2，返回正整数<br>如果1=2，返回0<br>如果1&lt;2，返回负整数</td>
+</tr>
+<tr class="even">
+<td>strncmp(str1,str2,n)</td>
+<td>逻辑同上</td>
+</tr>
+<tr class="odd">
+<td>strlen(str1)</td>
+<td>计算长度，不含结束符</td>
+</tr>
+<tr class="even">
+<td>strlwr(str1)</td>
+<td>将大写字母换成小写字母</td>
+</tr>
+<tr class="odd">
+<td>strupr()</td>
+<td>将小写字母换成大写字母</td>
+</tr>
+</tbody>
+</table>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2023/09/28/%E7%AC%94%E8%AE%B0%E5%8C%BA/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AC%94%E8%AE%B0/1.%20%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E5%8F%98%E9%87%8F%E4%B8%8E%E5%B8%B8%E9%87%8F/" rel="prev" title="变量与常量">
+      <i class="fa fa-chevron-left"></i> 变量与常量
+    </a></div>
+      <div class="post-nav-item"></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E6%95%B0%E7%BB%84%E7%9A%84%E5%AE%9A%E4%B9%89%E6%A0%BC%E5%BC%8F"><span class="nav-text">1. 字符数组的定义格式</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E6%95%B0%E7%BB%84%E7%9A%84%E8%B5%8B%E5%80%BC"><span class="nav-text">2. 字符数组的赋值</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E8%BE%93%E5%85%A5%E4%B8%8E%E8%BE%93%E5%87%BA"><span class="nav-text">3. 字符串的输入与输出</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E8%BE%93%E5%85%A5"><span class="nav-text">1. 字符串的输入</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E7%9A%84%E8%BE%93%E5%87%BA"><span class="nav-text">2. 字符串的输出</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#%E8%BF%99%E9%87%8C%E6%9C%89%E5%AD%97%E7%AC%A6%E4%B8%B2%E8%BE%93%E5%85%A5%E8%BE%93%E5%87%BA%E7%9A%84%E4%B8%80%E4%BA%9B%E5%A5%87%E5%A6%99%E6%96%B9%E6%B3%95"><span class="nav-text">3.
+这里有字符串输入输出的一些奇妙方法</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E7%AC%AC%E4%B8%80%E7%A7%8D-whilegetchar"><span class="nav-text">第一种 while+getchar()</span></a></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%A4%84%E7%90%86%E5%87%BD%E6%95%B0"><span class="nav-text">5. 字符串处理函数</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="Steven Yuan"
+      src="/images/avatar.png">
+  <p class="site-author-name" itemprop="name">Steven Yuan</p>
+  <div class="site-description" itemprop="description">Time will bring a surprise, if you belive.</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">14</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+  </nav>
+</div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Steven Yuan</span>
+</div>
+  <div class="powered-by">Powered by <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a>
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+      
+
+<script>
+  if (typeof MathJax === 'undefined') {
+    window.MathJax = {
+      loader: {
+        source: {
+          '[tex]/amsCd': '[tex]/amscd',
+          '[tex]/AMScd': '[tex]/amscd'
+        }
+      },
+      tex: {
+        inlineMath: {'[+]': [['$', '$']]},
+        tags: 'ams'
+      },
+      options: {
+        renderActions: {
+          findScript: [10, doc => {
+            document.querySelectorAll('script[type^="math/tex"]').forEach(node => {
+              const display = !!node.type.match(/; *mode=display/);
+              const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display);
+              const text = document.createTextNode('');
+              node.parentNode.replaceChild(text, node);
+              math.start = {node: text, delim: '', n: 0};
+              math.end = {node: text, delim: '', n: 0};
+              doc.math.push(math);
+            });
+          }, '', false],
+          insertedScript: [200, () => {
+            document.querySelectorAll('mjx-container').forEach(node => {
+              let target = node.parentNode;
+              if (target.nodeName.toLowerCase() === 'li') {
+                target.parentNode.classList.add('has-jax');
+              }
+            });
+          }, '', false]
+        }
+      }
+    };
+    (function () {
+      var script = document.createElement('script');
+      script.src = '//cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+      script.defer = true;
+      document.head.appendChild(script);
+    })();
+  } else {
+    MathJax.startup.document.state(0);
+    MathJax.texReset();
+    MathJax.typeset();
+  }
+</script>
+
+    
+
+  
+
+</body>
+</html>
