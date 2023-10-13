@@ -1,45 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>好玩的东西来啦</title>
-    <url>/2023/09/26/%E7%81%8C%E6%B0%B4%E5%8C%BA/%E5%A5%BD%E7%8E%A9%E7%9A%84%E4%B8%9C%E8%A5%BF%E6%9D%A5%E5%95%A6/</url>
-    <content><![CDATA[<h2 id="网页区">网页区</h2>
-<p>不想回答那些**问题吗？ 那就 <a href="https://lmbtfy.cn/">Let Me Baidu
-That For You</a> ！</p>
-<p>好玩的东东: <a
-href="https://deepmess.com/namerena/#">名字竞技场</a></p>
-<span id="more"></span>
-<p>了解一下 <a href="https://youquhome.com/6225/">天空有多高</a></p>
-<p>画画，我永远的神 <a href="http://weavesilk.com/">Silk</a></p>
-<p>看看人家，什么叫极简，游戏界的清流 <a
-href="https://www.xiaodao0.com/admin/index.html?lang=cn">生火间</a></p>
-<p><a href="http://lvmaojun.com/huaji/">滑稽官网</a> （手动滑稽</p>
-<h2 id="图片区">图片区</h2>
-<p>不会真有人把它看完了吧 <img
-src="https://s2.loli.net/2023/09/26/j5prmWcGDMKqfXa.gif"
-alt="贪吃蛇" /></p>
-<p>突然的感慨 <img
-src="https://s2.loli.net/2023/09/26/joD7YQepO1LuB3F.gif"
-alt="假如高考是一场游戏" /></p>
-<p>横 行 霸 道 <img
-src="https://s2.loli.net/2023/09/26/9hBxwPepZU6FSuX.gif"
-alt="群主不在" /></p>
-<p>旋转懵逼 <img
-src="https://s2.loli.net/2023/09/26/USzwuDCckJ9O418.gif"
-alt="ijwJ5n.gif" /></p>
-<p>em... <img src="https://s2.loli.net/2023/09/26/5M8uElHKAhbFpq1.gif"
-alt="5bec0d5c8671e.gif" /></p>
-<p>旋转的狐狸 <img
-src="https://s2.loli.net/2023/09/26/bj76cM4kmP2eJ1i.gif"
-alt="旋转的狐狸" /></p>
-<p>吃瓜 <img src="https://s2.loli.net/2023/09/26/e9Amnw615FpMUWi.png"
-alt="吃瓜" /></p>
-]]></content>
-      <categories>
-        <category>灌水区</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Markdown笔记</title>
     <url>/2023/09/23/%E5%BC%80%E5%8F%91%E5%8C%BA/Markdown%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<h2 id="markdown标题"><strong>Markdown标题</strong></h2>
@@ -103,6 +64,9 @@ ___斜体加粗___</code></pre>
       <categories>
         <category>开发区</category>
       </categories>
+      <tags>
+        <tag>Reference</tag>
+      </tags>
   </entry>
   <entry>
     <title>Hello World</title>
@@ -136,98 +100,46 @@ href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
       </categories>
   </entry>
   <entry>
-    <title>贪婪法</title>
-    <url>/2023/09/28/%E7%AC%94%E8%AE%B0%E5%8C%BA/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AC%94%E8%AE%B0/2.%20%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/%E8%B4%AA%E5%A9%AA%E6%B3%95/</url>
-    <content><![CDATA[<p>先来看题吧 <img src="https://s2.loli.net/2023/09/25/QcPbqzfjUWypd3v.jpg" alt="硬币找零问题.jpg"></p>
+    <title>好玩的东西来啦</title>
+    <url>/2023/09/26/%E7%81%8C%E6%B0%B4%E5%8C%BA/%E5%A5%BD%E7%8E%A9%E7%9A%84%E4%B8%9C%E8%A5%BF%E6%9D%A5%E5%95%A6/</url>
+    <content><![CDATA[<h2 id="网页区">网页区</h2>
+<p>不想回答那些**问题吗？ 那就 <a href="https://lmbtfy.cn/">Let Me Baidu
+That For You</a> ！</p>
+<p>好玩的东东: <a
+href="https://deepmess.com/namerena/#">名字竞技场</a></p>
 <span id="more"></span>
-<p><br> <br></p>
-<h3 id="基本逻辑">基本逻辑</h3>
-<p>在求解过程中每一步都选取一个局部最优策略，把问题规模缩小，最后合起来行程一个全局最优解
-<br> <br></p>
-<h3 id="基本步骤">基本步骤</h3>
-<ul>
-<li>从某个初始解出发</li>
-<li>采用迭代的过程，可以向目标前进一步时，根据局部最优策略，得到一个部分解，缩小问题规模。</li>
-<li>将所有解综合起来 <br> <br></li>
-</ul>
-<h3 id="贪婪法思路">贪婪法思路</h3>
-<p>从最大的开始试，最大的超了换第二大的，依次往后。 <br> <br></p>
-<h3 id="程序实现">程序实现</h3>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 懒得敲了</span></span><br></pre></td></tr></table></figure>
-<p><br> <br></p>
-<h3 id="需要注意的性质"><strong>需要注意的性质</strong></h3>
-<ul>
-<li>不是动规！不是动规！不是动规！<strong><em>局部解最优并不保证全局解最优</em></strong></li>
-<li>当==局部最优无法带来全局最优==时，就不具备贪心选择的性质，无法用贪婪法得到最优解</li>
-<li>失效的具体案例：当K=27时，贪婪的解为 27=10+10+3+3+1，但是正解应该为
-27=9+9+9 <br> <br></li>
-</ul>
-<h3 id="正解动态规划"><strong><em>正解：动态规划</em></strong></h3>
-<pre><code>令f[k]表示k分钱时需要的 最少的硬币数
-如果取1分钱，则问题变为f[k-1]
-如果取3分钱，则问题变为f[k-3]
-……</code></pre>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">f[k]= <span class="number">1</span>+ <span class="built_in">min</span>(f[k<span class="number">-1</span>],f[k<span class="number">-3</span>],f[k<span class="number">-9</span>],f[k<span class="number">-10</span>])</span><br></pre></td></tr></table></figure>
-<p>+1表示再拿一枚，min()中即为上一枚里最小的。</p>
+<p>了解一下 <a href="https://youquhome.com/6225/">天空有多高</a></p>
+<p>画画，我永远的神 <a href="http://weavesilk.com/">Silk</a></p>
+<p>看看人家，什么叫极简，游戏界的清流 <a
+href="https://www.xiaodao0.com/admin/index.html?lang=cn">生火间</a></p>
+<p><a href="http://lvmaojun.com/huaji/">滑稽官网</a> （手动滑稽</p>
+<h2 id="图片区">图片区</h2>
+<p>不会真有人把它看完了吧 <img
+src="https://s2.loli.net/2023/09/26/j5prmWcGDMKqfXa.gif"
+alt="贪吃蛇" /></p>
+<p>突然的感慨 <img
+src="https://s2.loli.net/2023/09/26/joD7YQepO1LuB3F.gif"
+alt="假如高考是一场游戏" /></p>
+<p>横 行 霸 道 <img
+src="https://s2.loli.net/2023/09/26/9hBxwPepZU6FSuX.gif"
+alt="群主不在" /></p>
+<p>旋转懵逼 <img
+src="https://s2.loli.net/2023/09/26/USzwuDCckJ9O418.gif"
+alt="ijwJ5n.gif" /></p>
+<p>em... <img src="https://s2.loli.net/2023/09/26/5M8uElHKAhbFpq1.gif"
+alt="5bec0d5c8671e.gif" /></p>
+<p>旋转的狐狸 <img
+src="https://s2.loli.net/2023/09/26/bj76cM4kmP2eJ1i.gif"
+alt="旋转的狐狸" /></p>
+<p>吃瓜 <img src="https://s2.loli.net/2023/09/26/e9Amnw615FpMUWi.png"
+alt="吃瓜" /></p>
 ]]></content>
       <categories>
-        <category>笔记区</category>
-        <category>程序设计(C++)笔记</category>
-        <category>2. 循环结构</category>
+        <category>灌水区</category>
       </categories>
-  </entry>
-  <entry>
-    <title>枚举法实例</title>
-    <url>/2023/09/28/%E7%AC%94%E8%AE%B0%E5%8C%BA/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AC%94%E8%AE%B0/2.%20%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/%E6%9E%9A%E4%B8%BE%E6%B3%95%E5%AE%9E%E4%BE%8B%20%E2%80%94%E2%80%94%20%E9%80%BB%E8%BE%91%E8%A1%A8%E8%BE%BE%E5%BC%8F%E4%B8%8E%E8%AE%A1%E7%AE%97%E6%80%9D%E7%BB%B4/</url>
-    <content><![CDATA[<p>先来看题</p>
-<figure>
-<img src="https://s2.loli.net/2023/09/25/dKzC369fstuXIpB.jpg" alt="枚举法实例1.jpg">
-<figcaption aria-hidden="true">枚举法实例1.jpg</figcaption>
-</figure>
-<span id="more"></span>
-<p>将四个人的话改为<strong>逻辑表达式</strong>，用a、b、c、d分别表示洞庭、洪泽、鄱阳、太湖。1、2、3、4表示顺序。那么四个人的话用逻辑表达式可化为</p>
-<pre><code>A: a==1 b==4 c==3
-B: b==1 a==4 c==2 d==3
-C: b==4 a==3
-D: c==1 d==4 b==2 a==3</code></pre>
-<p>以A为例，每个人仅答对一个用逻辑表达式化为：</p>
-<pre><code>A:  (a==1)+(b==4)+(c==3) == 1</code></pre>
-<p>然后我们就可以开始暴力啦：</p>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> _for(i,a,b) for(i=1;i&lt;=a &amp;&amp; !flag; i++）</span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> flag=<span class="number">0</span>; <span class="comment">//用于判断是否找到正确答案</span></span><br><span class="line">_for(a,<span class="number">1</span>,<span class="number">4</span>){</span><br><span class="line">	_for(b,<span class="number">1</span>,<span class="number">4</span>){</span><br><span class="line">		<span class="keyword">if</span>(b==a) <span class="keyword">continue</span>; <span class="comment">//防止出现相等</span></span><br><span class="line">		_for(c,<span class="number">1</span>,<span class="number">4</span>){</span><br><span class="line">			<span class="keyword">if</span>(c==a||c==b) <span class="keyword">continue</span>;</span><br><span class="line">			d=<span class="number">10</span>-a-b-c;</span><br><span class="line">			<span class="keyword">if</span>(){ <span class="comment">//里面填刚刚的逻辑表达式</span></span><br><span class="line">				flag=<span class="number">1</span>;</span><br><span class="line">				cout &lt;&lt; a &lt;&lt; <span class="string">' '</span> &lt;&lt; b &lt;&lt; <span class="string">' '</span> &lt;&lt; c &lt;&lt; <span class="string">' '</span> &lt;&lt; d;</span><br><span class="line">			}</span><br><span class="line">		}</span><br><span class="line">	}</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
-<p>这个题的<font color="yellow">优化</font>在于 + 直接把
-<code>flag</code> 写到 <code>for</code> 的判断条件里面去。
-<strong><em>for的里面是可以写很多个的，用逗号隔开</em></strong> +
-continue 优化 + d不需要遍历了，直接减就行</p>
-]]></content>
-      <categories>
-        <category>笔记区</category>
-        <category>程序设计(C++)笔记</category>
-        <category>2. 循环结构</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>变量与常量</title>
-    <url>/2023/09/28/%E7%AC%94%E8%AE%B0%E5%8C%BA/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AC%94%E8%AE%B0/1.%20%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E5%8F%98%E9%87%8F%E4%B8%8E%E5%B8%B8%E9%87%8F/</url>
-    <content><![CDATA[<h3 id="常量">常量</h3>
-<p>定义方法 <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="type">const</span> <span class="type">int</span> N = <span class="number">10000</span>;</span><br></pre></td></tr></table></figure> <span id="more"></span></p>
-<p><br> <br></p>
-<h3 id="字符类型">字符类型</h3>
-<p>由一个字符组成的常量或变量 - 常量：<code>const chr='a'</code> -
-变量：<code>char chr='a'</code>
-它是一个有序类型，大小顺序由ASCLL码决定</p>
-<p><br> <br></p>
-<h3 id="枚举型变量">枚举型变量</h3>
-<h4 id="枚举型基本">枚举型基本</h4>
-<p>自己定义一个变量类型，并且规定变量的范围 #### 语句实现 <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//自己规定变量类型</span></span><br><span class="line"><span class="keyword">enum</span> <span class="title class_">weekday</span> = {Monday,Tuesday,Wednsday,Thursday,Friday} </span><br><span class="line"><span class="comment">//用自己规定的类型来声明变量</span></span><br><span class="line">weeday a = Monday;</span><br></pre></td></tr></table></figure>
-#### 好处 变量可以为有意义的类型名，提高程序的可读性 #### 注: +
-虽然枚举型变量中存储的是一个整数，但<strong><em>不能将一个整数赋给一个自定义的枚举型变量</em></strong>，否则会出现编译错误。
-+ 布尔型其实就是C++事先定义好的一个枚举类型</p>
-]]></content>
-      <categories>
-        <category>笔记区</category>
-        <category>程序设计(C++)笔记</category>
-        <category>1. 基础知识</category>
-      </categories>
+      <tags>
+        <tag>Fun</tag>
+      </tags>
   </entry>
   <entry>
     <title>常用库函数</title>
@@ -296,29 +208,32 @@ continue 优化 + d不需要遍历了，直接减就行</p>
         <category>程序设计(C++)笔记</category>
         <category>1. 基础知识</category>
       </categories>
+      <tags>
+        <tag>Reference</tag>
+      </tags>
   </entry>
   <entry>
-    <title>函数</title>
-    <url>/2023/09/28/%E7%AC%94%E8%AE%B0%E5%8C%BA/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AC%94%E8%AE%B0/3.%20%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0/</url>
-    <content><![CDATA[<h3 id="函数的定义">1.函数的定义</h3>
-<h5 id="函数定义的语法形式">1.1 函数定义的语法形式</h5>
-<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">数据类型 函数名(形式参数表){</span><br><span class="line">	函数体    <span class="comment">//执行语句</span></span><br><span class="line">}</span><br></pre></td></tr></table></figure>
-<span id="more"></span>
-<h5 id="函数的形式">1.2 函数的形式</h5>
-<p>函数的形式从结构上来说可以分为三种：无参函数、有参函数、空函数。
-<strong>(1) 有参函数</strong> 带回函数值的函数
-<strong>(2)无参函数</strong> 不需要带回函数值，所以函数值类型可以为
-<font color="8B6CEF">void</font> <strong>(3)空函数</strong>
-函数体为空，在大型程序设计中，空函数用于扩充函数功能 <br> <br></p>
-<h3 id="函数的声明和调用">2. 函数的声明和调用</h3>
-<hr>
-<h5 id="函数的声明">2.1 函数的声明</h5>
-<p>按如下形式声明 <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">类型说明符 被调函数名(含类型说明的形参表)</span><br></pre></td></tr></table></figure></p>
+    <title>变量与常量</title>
+    <url>/2023/09/28/%E7%AC%94%E8%AE%B0%E5%8C%BA/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AC%94%E8%AE%B0/1.%20%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E5%8F%98%E9%87%8F%E4%B8%8E%E5%B8%B8%E9%87%8F/</url>
+    <content><![CDATA[<h3 id="常量">常量</h3>
+<p>定义方法 <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="type">const</span> <span class="type">int</span> N = <span class="number">10000</span>;</span><br></pre></td></tr></table></figure> <span id="more"></span></p>
+<p><br> <br></p>
+<h3 id="字符类型">字符类型</h3>
+<p>由一个字符组成的常量或变量 - 常量：<code>const chr='a'</code> -
+变量：<code>char chr='a'</code>
+它是一个有序类型，大小顺序由ASCLL码决定</p>
+<p><br> <br></p>
+<h3 id="枚举型变量">枚举型变量</h3>
+<h4 id="枚举型基本">枚举型基本</h4>
+<p>自己定义一个变量类型，并且规定变量的范围 #### 语句实现 <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">//自己规定变量类型</span></span><br><span class="line"><span class="keyword">enum</span> <span class="title class_">weekday</span> = {Monday,Tuesday,Wednsday,Thursday,Friday} </span><br><span class="line"><span class="comment">//用自己规定的类型来声明变量</span></span><br><span class="line">weeday a = Monday;</span><br></pre></td></tr></table></figure>
+#### 好处 变量可以为有意义的类型名，提高程序的可读性 #### 注: +
+虽然枚举型变量中存储的是一个整数，但<strong><em>不能将一个整数赋给一个自定义的枚举型变量</em></strong>，否则会出现编译错误。
++ 布尔型其实就是C++事先定义好的一个枚举类型</p>
 ]]></content>
       <categories>
         <category>笔记区</category>
         <category>程序设计(C++)笔记</category>
-        <category>3. 函数</category>
+        <category>1. 基础知识</category>
       </categories>
   </entry>
   <entry>
@@ -449,12 +364,95 @@ continue 优化 + d不需要遍历了，直接减就行</p>
         <category>程序设计(C++)笔记</category>
         <category>1. 基础知识</category>
       </categories>
+      <tags>
+        <tag>Reference</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>运算符</title>
+    <url>/2023/09/28/%E7%AC%94%E8%AE%B0%E5%8C%BA/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AC%94%E8%AE%B0/1.%20%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E8%BF%90%E7%AE%97%E7%AC%A6/</url>
+    <content><![CDATA[<h3 id="算术运算符">1. 算术运算符</h3>
+<h4 id="模运算符">模运算符 <code>%</code></h4>
+<ul>
+<li>双目运算符</li>
+<li>操作对象只为整形</li>
+</ul>
+<h4 id="除法运算符">除法运算符 /</h4>
+<span id="more"></span>
+<h4 id="自增自减运算符">自增自减运算符</h4>
+<ul>
+<li>i++ <em>先干活后吃饭</em></li>
+<li>++i <em>先吃饭后干活</em></li>
+</ul>
+<h4 id="复合算术赋值">复合算术赋值</h4>
+<ul>
+<li>i+=1</li>
+</ul>
+<p><br> <br></p>
+<h3 id="关系运算符">2. 关系运算符</h3>
+<ul>
+<li><blockquote>
+<p>&lt; &gt;= &lt;=</p>
+</blockquote></li>
+<li>结果为整形</li>
+<li>值只有0，1两种</li>
+</ul>
+<p><br> <br></p>
+<h3 id="逻辑运算符">3. 逻辑运算符</h3>
+<h4 id="与和或">“与”和“或”（&amp;&amp;、||）</h4>
+<ul>
+<li>双目运算符</li>
+<li>左结合 #### “非”（！）</li>
+<li>单目运算符</li>
+<li>右结合</li>
+</ul>
+<p><br> <br></p>
+<h3 id="位运算符"><em>4. 位运算符</em></h3>
+<h4 id="位与">位与 &amp;</h4>
+<ul>
+<li>把两个数二进制相与，两个均为1结果为1</li>
+<li>通常用来把某些位清零或保留某些位 #### 位或 |</li>
+<li>把两个数二进制相或 #### 异或 ^</li>
+<li>两位不相同时为 1，相同时为 0 #### 取反 ~</li>
+<li>按位取反 #### 左移 &lt;&lt;</li>
+<li>二进制向左移n位 #### 右移 &gt;&gt;</li>
+<li>二进制向右移n位</li>
+</ul>
+<p><br> <br></p>
+<h3 id="优先级"><strong><em>5. 优先级</em></strong></h3>
+<p>赋值运算符 逻辑运算符 关系运算符 算数运算符 --------------
+<em>从左到右依次升高</em> ---------------&gt;</p>
+<p>关系运算符的结合型：自左至右</p>
+]]></content>
+      <categories>
+        <category>笔记区</category>
+        <category>程序设计(C++)笔记</category>
+        <category>1. 基础知识</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>n! 中质因数的个数</title>
+    <url>/2023/10/13/%E7%AC%94%E8%AE%B0%E5%8C%BA/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AC%94%E8%AE%B0/%E6%9D%82%E9%A1%B9/n!%20%E4%B8%AD%E8%B4%A8%E5%9B%A0%E6%95%B0%E7%9A%84%E4%B8%AA%E6%95%B0/</url>
+    <content><![CDATA[<p>求 n! 中质因子 p 的个数</p>
+<h2 id="法一-暴力">### 法一 暴力</h2>
+<p>时间复杂度 <code>O(nlogn)</code> <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">cal</span><span class="params">(<span class="type">int</span> n,<span class="type">int</span> p)</span></span>{</span><br><span class="line">	<span class="type">int</span> temp,ans=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">for</span>(<span class="type">int</span> i=<span class="number">2</span>,i&lt;=n;n++){</span><br><span class="line">		temp=i;</span><br><span class="line">		<span class="keyword">while</span>(temp%p==<span class="number">0</span>){</span><br><span class="line">			ans++;</span><br><span class="line">			temp/=p;</span><br><span class="line">		}</span><br><span class="line">	}</span><br><span class="line">	<span class="keyword">return</span> ans;</span><br><span class="line">}</span><br></pre></td></tr></table></figure></p>
+<h2 id="法二-公式">### 法二 公式</h2>
+<p>时间复杂度 <code>O(logn)</code> #### 公式 <span class="math inline"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.025ex;" xmlns="http://www.w3.org/2000/svg" width="1.986ex" height="1.645ex" role="img" focusable="false" viewBox="0 -716 878 727"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mo" transform="translate(600,0)"><path data-c="21" d="M78 661Q78 682 96 699T138 716T180 700T199 661Q199 654 179 432T158 206Q156 198 139 198Q121 198 119 206Q118 209 98 431T78 661ZM79 61Q79 89 97 105T141 121Q164 119 181 104T198 61Q198 31 181 16T139 1Q114 1 97 16T79 61Z"></path></g></g></g></svg></mjx-container></span> 中 <span class="math inline"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.439ex;" xmlns="http://www.w3.org/2000/svg" width="1.138ex" height="1.439ex" role="img" focusable="false" viewBox="0 -442 503 636"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D45D" d="M23 287Q24 290 25 295T30 317T40 348T55 381T75 411T101 433T134 442Q209 442 230 378L240 387Q302 442 358 442Q423 442 460 395T497 281Q497 173 421 82T249 -10Q227 -10 210 -4Q199 1 187 11T168 28L161 36Q160 35 139 -51T118 -138Q118 -144 126 -145T163 -148H188Q194 -155 194 -157T191 -175Q188 -187 185 -190T172 -194Q170 -194 161 -194T127 -193T65 -192Q-5 -192 -24 -194H-32Q-39 -187 -39 -183Q-37 -156 -26 -148H-6Q28 -147 33 -136Q36 -130 94 103T155 350Q156 355 156 364Q156 405 131 405Q109 405 94 377T71 316T59 280Q57 278 43 278H29Q23 284 23 287ZM178 102Q200 26 252 26Q282 26 310 49T356 107Q374 141 392 215T411 325V331Q411 405 350 405Q339 405 328 402T306 393T286 380T269 365T254 350T243 336T235 326L232 322Q232 321 229 308T218 264T204 212Q178 106 178 102Z"></path></g></g></g></svg></mjx-container></span> 的 个数为 <span class="math display"><mjx-container class="MathJax" jax="SVG" display="true"><svg style="vertical-align: -2.068ex;" xmlns="http://www.w3.org/2000/svg" width="20.29ex" height="4.597ex" role="img" focusable="false" viewBox="0 -1118 8968 2031.9"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D44E" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path></g><g data-mml-node="mi" transform="translate(529,0)"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mi" transform="translate(1129,0)"><path data-c="1D460" d="M131 289Q131 321 147 354T203 415T300 442Q362 442 390 415T419 355Q419 323 402 308T364 292Q351 292 340 300T328 326Q328 342 337 354T354 372T367 378Q368 378 368 379Q368 382 361 388T336 399T297 405Q249 405 227 379T204 326Q204 301 223 291T278 274T330 259Q396 230 396 163Q396 135 385 107T352 51T289 7T195 -10Q118 -10 86 19T53 87Q53 126 74 143T118 160Q133 160 146 151T160 120Q160 94 142 76T111 58Q109 57 108 57T107 55Q108 52 115 47T146 34T201 27Q237 27 263 38T301 66T318 97T323 122Q323 150 302 164T254 181T195 196T148 231Q131 256 131 289Z"></path></g><g data-mml-node="mo" transform="translate(1875.8,0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g><g data-mml-node="mfrac" transform="translate(2931.6,0)"><g data-mml-node="mi" transform="translate(220,676)"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mi" transform="translate(268.5,-686)"><path data-c="1D45D" d="M23 287Q24 290 25 295T30 317T40 348T55 381T75 411T101 433T134 442Q209 442 230 378L240 387Q302 442 358 442Q423 442 460 395T497 281Q497 173 421 82T249 -10Q227 -10 210 -4Q199 1 187 11T168 28L161 36Q160 35 139 -51T118 -138Q118 -144 126 -145T163 -148H188Q194 -155 194 -157T191 -175Q188 -187 185 -190T172 -194Q170 -194 161 -194T127 -193T65 -192Q-5 -192 -24 -194H-32Q-39 -187 -39 -183Q-37 -156 -26 -148H-6Q28 -147 33 -136Q36 -130 94 103T155 350Q156 355 156 364Q156 405 131 405Q109 405 94 377T71 316T59 280Q57 278 43 278H29Q23 284 23 287ZM178 102Q200 26 252 26Q282 26 310 49T356 107Q374 141 392 215T411 325V331Q411 405 350 405Q339 405 328 402T306 393T286 380T269 365T254 350T243 336T235 326L232 322Q232 321 229 308T218 264T204 212Q178 106 178 102Z"></path></g><rect width="800" height="60" x="120" y="220"></rect></g><g data-mml-node="mo" transform="translate(4193.8,0)"><path data-c="2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path></g><g data-mml-node="mfrac" transform="translate(5194,0)"><g data-mml-node="mi" transform="translate(389.8,676)"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="msup" transform="translate(220,-719.9)"><g data-mml-node="mi"><path data-c="1D45D" d="M23 287Q24 290 25 295T30 317T40 348T55 381T75 411T101 433T134 442Q209 442 230 378L240 387Q302 442 358 442Q423 442 460 395T497 281Q497 173 421 82T249 -10Q227 -10 210 -4Q199 1 187 11T168 28L161 36Q160 35 139 -51T118 -138Q118 -144 126 -145T163 -148H188Q194 -155 194 -157T191 -175Q188 -187 185 -190T172 -194Q170 -194 161 -194T127 -193T65 -192Q-5 -192 -24 -194H-32Q-39 -187 -39 -183Q-37 -156 -26 -148H-6Q28 -147 33 -136Q36 -130 94 103T155 350Q156 355 156 364Q156 405 131 405Q109 405 94 377T71 316T59 280Q57 278 43 278H29Q23 284 23 287ZM178 102Q200 26 252 26Q282 26 310 49T356 107Q374 141 392 215T411 325V331Q411 405 350 405Q339 405 328 402T306 393T286 380T269 365T254 350T243 336T235 326L232 322Q232 321 229 308T218 264T204 212Q178 106 178 102Z"></path></g><g data-mml-node="mn" transform="translate(536,289) scale(0.707)"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g></g><rect width="1139.6" height="60" x="120" y="220"></rect></g><g data-mml-node="mo" transform="translate(6795.8,0)"><path data-c="2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path></g><g data-mml-node="mo" transform="translate(7796,0)"><path data-c="22EF" d="M78 250Q78 274 95 292T138 310Q162 310 180 294T199 251Q199 226 182 208T139 190T96 207T78 250ZM525 250Q525 274 542 292T585 310Q609 310 627 294T646 251Q646 226 629 208T586 190T543 207T525 250ZM972 250Q972 274 989 292T1032 310Q1056 310 1074 294T1093 251Q1093 226 1076 208T1033 190T990 207T972 250Z"></path></g></g></g></svg></mjx-container></span> #### 证明 + <span class="math inline"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.566ex;" xmlns="http://www.w3.org/2000/svg" width="4.753ex" height="2.262ex" role="img" focusable="false" viewBox="0 -750 2100.7 1000"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="5B" d="M118 -250V750H255V710H158V-210H255V-250H118Z"></path></g><g data-mml-node="mn" transform="translate(278,0)"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></g><g data-mml-node="mo" transform="translate(778,0)"><path data-c="2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path></g><g data-mml-node="mi" transform="translate(1222.7,0)"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mo" transform="translate(1822.7,0)"><path data-c="5D" d="M22 710V750H159V-250H22V-210H119V710H22Z"></path></g></g></g></svg></mjx-container></span>
+中有因子 <span class="math inline"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.439ex;" xmlns="http://www.w3.org/2000/svg" width="1.138ex" height="1.439ex" role="img" focusable="false" viewBox="0 -442 503 636"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mi"><path data-c="1D45D" d="M23 287Q24 290 25 295T30 317T40 348T55 381T75 411T101 433T134 442Q209 442 230 378L240 387Q302 442 358 442Q423 442 460 395T497 281Q497 173 421 82T249 -10Q227 -10 210 -4Q199 1 187 11T168 28L161 36Q160 35 139 -51T118 -138Q118 -144 126 -145T163 -148H188Q194 -155 194 -157T191 -175Q188 -187 185 -190T172 -194Q170 -194 161 -194T127 -193T65 -192Q-5 -192 -24 -194H-32Q-39 -187 -39 -183Q-37 -156 -26 -148H-6Q28 -147 33 -136Q36 -130 94 103T155 350Q156 355 156 364Q156 405 131 405Q109 405 94 377T71 316T59 280Q57 278 43 278H29Q23 284 23 287ZM178 102Q200 26 252 26Q282 26 310 49T356 107Q374 141 392 215T411 325V331Q411 405 350 405Q339 405 328 402T306 393T286 380T269 365T254 350T243 336T235 326L232 322Q232 321 229 308T218 264T204 212Q178 106 178 102Z"></path></g></g></g></svg></mjx-container></span> 的数的个数为 <span class="math inline"><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -1.469ex;" xmlns="http://www.w3.org/2000/svg" width="4.344ex" height="4.07ex" role="img" focusable="false" viewBox="0 -1149.5 1920.3 1799"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mrow"><g data-mml-node="mo" transform="translate(0 -0.5)"><path data-c="230A" d="M224 -649V1150H275V-598H511V-649H224Z"></path></g><g data-mml-node="mfrac" transform="translate(528,0)"><g data-mml-node="mi" transform="translate(220,394) scale(0.707)"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mi" transform="translate(254.3,-345) scale(0.707)"><path data-c="1D45D" d="M23 287Q24 290 25 295T30 317T40 348T55 381T75 411T101 433T134 442Q209 442 230 378L240 387Q302 442 358 442Q423 442 460 395T497 281Q497 173 421 82T249 -10Q227 -10 210 -4Q199 1 187 11T168 28L161 36Q160 35 139 -51T118 -138Q118 -144 126 -145T163 -148H188Q194 -155 194 -157T191 -175Q188 -187 185 -190T172 -194Q170 -194 161 -194T127 -193T65 -192Q-5 -192 -24 -194H-32Q-39 -187 -39 -183Q-37 -156 -26 -148H-6Q28 -147 33 -136Q36 -130 94 103T155 350Q156 355 156 364Q156 405 131 405Q109 405 94 377T71 316T59 280Q57 278 43 278H29Q23 284 23 287ZM178 102Q200 26 252 26Q282 26 310 49T356 107Q374 141 392 215T411 325V331Q411 405 350 405Q339 405 328 402T306 393T286 380T269 365T254 350T243 336T235 326L232 322Q232 321 229 308T218 264T204 212Q178 106 178 102Z"></path></g><rect width="624.3" height="60" x="120" y="220"></rect></g><g data-mml-node="mo" transform="translate(1392.3,0) translate(0 -0.5)"><path data-c="230B" d="M252 -598V1150H303V-649H16V-598H252Z"></path></g></g></g></g></svg></mjx-container></span>
+![[n!中质因子p的个数.png]] #### 代码 <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">cal</span><span class="params">(<span class="type">int</span> n,<span class="type">int</span> p)</span></span>{</span><br><span class="line">	<span class="type">int</span> ans=<span class="number">0</span>;</span><br><span class="line">	<span class="keyword">while</span>(n){</span><br><span class="line">		ans+=n/p;</span><br><span class="line">		n/=p;</span><br><span class="line">	}</span><br><span class="line">	<span class="keyword">return</span> ans;</span><br><span class="line">}</span><br></pre></td></tr></table></figure></p>
+<h2 id="法三-递归">### 法三 递归</h2>
+<p>由法2引申而来，时间复杂度 <code>O(logn)</code> <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">cal</span><span class="params">(<span class="type">int</span> n,<span class="type">int</span> p)</span></span>{</span><br><span class="line">	<span class="keyword">if</span>(n&lt;p) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">	<span class="keyword">return</span> n/p + <span class="built_in">cal</span>(n/p,p)</span><br><span class="line">}</span><br></pre></td></tr></table></figure></p>
+]]></content>
+      <categories>
+        <category>笔记区</category>
+        <category>程序设计(C++)笔记</category>
+        <category>杂项</category>
+      </categories>
   </entry>
   <entry>
     <title>数据的输入与输出</title>
     <url>/2023/09/28/%E7%AC%94%E8%AE%B0%E5%8C%BA/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AC%94%E8%AE%B0/1.%20%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E6%95%B0%E6%8D%AE%E7%9A%84%E8%BE%93%E5%85%A5%E4%B8%8E%E8%BE%93%E5%87%BA/</url>
     <content><![CDATA[<h3 id="字符输入函数-getchar">1. 字符输入函数 getchar()</h3>
-<hr>
 <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="type">char</span> ch;</span><br><span class="line">ch = <span class="built_in">getchar</span>();</span><br></pre></td></tr></table></figure>
 <ul>
 <li>只接受单字符</li>
@@ -462,11 +460,9 @@ continue 优化 + d不需要遍历了，直接减就行</p>
 <span id="more"></span>
 <p><br> <br></p>
 <h3 id="字符输出函数-putchar">2. 字符输出函数 putchar()</h3>
-<hr>
 <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>{</span><br><span class="line">	<span class="type">char</span> c - <span class="string">'B'</span>;     </span><br><span class="line">	<span class="built_in">putchar</span>(c);</span><br><span class="line">	<span class="built_in">putchar</span>(<span class="string">'\x42'</span>);  <span class="comment">//用转义字符输出'B'</span></span><br><span class="line">	<span class="built_in">putchar</span>(<span class="number">0x42</span>);    <span class="comment">//用16进制ASCLL码值输出'B'</span></span><br><span class="line">	<span class="built_in">putchar</span>(<span class="number">66</span>);      <span class="comment">//用10进制ASCLL码值输出'B'</span></span><br><span class="line">	<span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
 <p><br> <br></p>
 <h3 id="流输入输出">3. 流输入输出</h3>
-<hr>
 <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">cin &gt;&gt; a;</span><br><span class="line">cout &lt;&lt; a;</span><br></pre></td></tr></table></figure>
 <p><br> <br></p>
 <h3 id="格式化输入函数-scanf"><em>4. 格式化输入函数</em>
@@ -685,6 +681,9 @@ scanf 与 printf 更优</li>
         <category>程序设计(C++)笔记</category>
         <category>1. 基础知识</category>
       </categories>
+      <tags>
+        <tag>Reference</tag>
+      </tags>
   </entry>
   <entry>
     <title>随机数 rand() 相关</title>
@@ -705,6 +704,92 @@ rand() * 10 /(RAND_MAX + 1) <br> <br></p>
         <category>笔记区</category>
         <category>程序设计(C++)笔记</category>
         <category>杂项</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>函数</title>
+    <url>/2023/09/28/%E7%AC%94%E8%AE%B0%E5%8C%BA/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AC%94%E8%AE%B0/3.%20%E5%87%BD%E6%95%B0/%E5%87%BD%E6%95%B0/</url>
+    <content><![CDATA[<h3 id="函数的定义">1.函数的定义</h3>
+<h5 id="函数定义的语法形式">1.1 函数定义的语法形式</h5>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">数据类型 函数名(形式参数表){</span><br><span class="line">	函数体    <span class="comment">//执行语句</span></span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+<span id="more"></span>
+<h5 id="函数的形式">1.2 函数的形式</h5>
+<p>函数的形式从结构上来说可以分为三种：无参函数、有参函数、空函数。
+<strong>(1) 有参函数</strong> 带回函数值的函数
+<strong>(2)无参函数</strong> 不需要带回函数值，所以函数值类型可以为
+<font color="8B6CEF">void</font> <strong>(3)空函数</strong>
+函数体为空，在大型程序设计中，空函数用于扩充函数功能 <br> <br></p>
+<h3 id="函数的声明和调用">2. 函数的声明和调用</h3>
+<hr>
+<h5 id="函数的声明">2.1 函数的声明</h5>
+<p>按如下形式声明 <figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">类型说明符 被调函数名(含类型说明的形参表)</span><br></pre></td></tr></table></figure></p>
+]]></content>
+      <categories>
+        <category>笔记区</category>
+        <category>程序设计(C++)笔记</category>
+        <category>3. 函数</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>一些有用的东东</title>
+    <url>/2023/09/25/%E7%AC%94%E8%AE%B0%E5%8C%BA/%E9%AB%98%E6%95%B01%E7%AC%94%E8%AE%B0/%E6%9D%82%E9%A1%B9/%E4%B8%80%E4%BA%9B%E6%9C%89%E7%94%A8%E7%9A%84%E4%B8%9C%E4%B8%9C/</url>
+    <content><![CDATA[<h2 id="柯西-施瓦茨不等式schwarz">柯西-施瓦茨不等式(Schwarz)</h2>
+<p><del>柯西不等式的NB叫法</del></p>
+<p><span class="math display"><mjx-container class="MathJax" jax="SVG" display="true"><svg style="vertical-align: -2.819ex;" xmlns="http://www.w3.org/2000/svg" width="25.995ex" height="6.354ex" role="img" focusable="false" viewBox="0 -1562.5 11489.8 2808.5"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="munderover"><g data-mml-node="mo"><path data-c="2211" d="M60 948Q63 950 665 950H1267L1325 815Q1384 677 1388 669H1348L1341 683Q1320 724 1285 761Q1235 809 1174 838T1033 881T882 898T699 902H574H543H251L259 891Q722 258 724 252Q725 250 724 246Q721 243 460 -56L196 -356Q196 -357 407 -357Q459 -357 548 -357T676 -358Q812 -358 896 -353T1063 -332T1204 -283T1307 -196Q1328 -170 1348 -124H1388Q1388 -125 1381 -145T1356 -210T1325 -294L1267 -449L666 -450Q64 -450 61 -448Q55 -446 55 -439Q55 -437 57 -433L590 177Q590 178 557 222T452 366T322 544L56 909L55 924Q55 945 60 948Z"></path></g><g data-mml-node="TeXAtom" transform="translate(148.2,-1087.9) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="1D456" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mo" transform="translate(345,0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g><g data-mml-node="mn" transform="translate(1123,0)"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></g></g><g data-mml-node="TeXAtom" transform="translate(509.9,1150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g></g></g><g data-mml-node="msubsup" transform="translate(1610.7,0)"><g data-mml-node="mi"><path data-c="1D44E" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path></g><g data-mml-node="TeXAtom" transform="translate(562,413) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g></g><g data-mml-node="TeXAtom" transform="translate(562,-247) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="1D456" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path></g></g></g><g data-mml-node="munderover" transform="translate(2742.9,0)"><g data-mml-node="mo"><path data-c="2211" d="M60 948Q63 950 665 950H1267L1325 815Q1384 677 1388 669H1348L1341 683Q1320 724 1285 761Q1235 809 1174 838T1033 881T882 898T699 902H574H543H251L259 891Q722 258 724 252Q725 250 724 246Q721 243 460 -56L196 -356Q196 -357 407 -357Q459 -357 548 -357T676 -358Q812 -358 896 -353T1063 -332T1204 -283T1307 -196Q1328 -170 1348 -124H1388Q1388 -125 1381 -145T1356 -210T1325 -294L1267 -449L666 -450Q64 -450 61 -448Q55 -446 55 -439Q55 -437 57 -433L590 177Q590 178 557 222T452 366T322 544L56 909L55 924Q55 945 60 948Z"></path></g><g data-mml-node="TeXAtom" transform="translate(148.2,-1087.9) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="1D456" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mo" transform="translate(345,0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g><g data-mml-node="mn" transform="translate(1123,0)"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></g></g><g data-mml-node="TeXAtom" transform="translate(509.9,1150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g></g></g><g data-mml-node="msubsup" transform="translate(4353.6,0)"><g data-mml-node="mi"><path data-c="1D44F" d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z"></path></g><g data-mml-node="TeXAtom" transform="translate(462,413) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g></g><g data-mml-node="TeXAtom" transform="translate(462,-247) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="1D456" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path></g></g></g><g data-mml-node="mtext" transform="translate(5219.1,0)"><path data-c="A0" d=""></path></g><g data-mml-node="mo" transform="translate(5746.9,0)"><path data-c="2A7E" d="M83 616Q83 624 89 630T99 636Q107 636 253 568T543 431T687 361Q694 356 694 346T687 331Q685 329 395 192L107 56H101Q83 58 83 76Q83 77 83 79Q82 86 98 95Q117 105 248 167Q326 204 378 228L626 346L360 472Q291 505 200 548Q112 589 98 597T83 616ZM674 172Q692 172 694 154Q694 142 687 137Q685 135 395 -2L107 -138H101Q83 -136 83 -118Q83 -106 96 -100Q100 -98 380 35T665 170T674 172Z"></path></g><g data-mml-node="mtext" transform="translate(6802.7,0)"><path data-c="A0" d=""></path></g><g data-mml-node="mo" transform="translate(7052.7,0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path></g><g data-mml-node="munderover" transform="translate(7441.7,0)"><g data-mml-node="mo"><path data-c="2211" d="M60 948Q63 950 665 950H1267L1325 815Q1384 677 1388 669H1348L1341 683Q1320 724 1285 761Q1235 809 1174 838T1033 881T882 898T699 902H574H543H251L259 891Q722 258 724 252Q725 250 724 246Q721 243 460 -56L196 -356Q196 -357 407 -357Q459 -357 548 -357T676 -358Q812 -358 896 -353T1063 -332T1204 -283T1307 -196Q1328 -170 1348 -124H1388Q1388 -125 1381 -145T1356 -210T1325 -294L1267 -449L666 -450Q64 -450 61 -448Q55 -446 55 -439Q55 -437 57 -433L590 177Q590 178 557 222T452 366T322 544L56 909L55 924Q55 945 60 948Z"></path></g><g data-mml-node="TeXAtom" transform="translate(148.2,-1087.9) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="1D456" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mo" transform="translate(345,0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g><g data-mml-node="mn" transform="translate(1123,0)"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></g></g><g data-mml-node="TeXAtom" transform="translate(509.9,1150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g></g></g><g data-mml-node="msub" transform="translate(9052.3,0)"><g data-mml-node="mi"><path data-c="1D44E" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path></g><g data-mml-node="TeXAtom" transform="translate(562,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="1D456" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path></g></g></g><g data-mml-node="msub" transform="translate(9908.3,0)"><g data-mml-node="mi"><path data-c="1D44F" d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z"></path></g><g data-mml-node="TeXAtom" transform="translate(462,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="1D456" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path></g></g></g><g data-mml-node="msup" transform="translate(10664.2,0)"><g data-mml-node="mo"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></g><g data-mml-node="TeXAtom" transform="translate(422,413) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g></g></g></g></g></svg></mjx-container></span></p>
+<h4 id="proof-1韦达定理">Proof 1：韦达定理</h4>
+<p>要证一个平方小于乘积，可以考虑<strong>韦达定理</strong>，构造二次方程
+<em>(<del>初中方法</del> NB方法！)</em></p>
+<span id="more"></span>
+<h4 id="proof-2数学归纳法">Proof 2：数学归纳法</h4>
+<p>没啥好说的，证就完了</p>
+<hr>
+<h2 id="无穷大的阶数">无穷大的阶数</h2>
+<p><span class="math display"><mjx-container class="MathJax" jax="SVG" display="true"><svg style="vertical-align: -0.152ex;" xmlns="http://www.w3.org/2000/svg" width="37.349ex" height="2.196ex" role="img" focusable="false" viewBox="0 -903.7 16508.4 970.7"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msup"><g data-mml-node="mi"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="TeXAtom" transform="translate(633,413) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g></g></g><g data-mml-node="mtext" transform="translate(1107.3,0)"><path data-c="A0" d=""></path></g><g data-mml-node="mo" transform="translate(1635,0)"><path data-c="226B" d="M55 539T55 547T60 561T74 567Q81 567 207 498Q297 449 365 412Q633 265 636 261Q639 255 639 250Q639 241 626 232Q614 224 365 88Q83 -65 79 -66Q76 -67 73 -67Q65 -67 60 -61T55 -47Q55 -39 61 -33Q62 -33 95 -15T193 39T320 109L321 110H322L323 111H324L325 112L326 113H327L329 114H330L331 115H332L333 116L334 117H335L336 118H337L338 119H339L340 120L341 121H342L343 122H344L345 123H346L347 124L348 125H349L351 126H352L353 127H354L355 128L356 129H357L358 130H359L360 131H361L362 132L363 133H364L365 134H366L367 135H368L369 136H370L371 137L372 138H373L374 139H375L376 140L378 141L576 251Q63 530 62 533Q55 539 55 547ZM360 539T360 547T365 561T379 567Q386 567 512 498Q602 449 670 412Q938 265 941 261Q944 255 944 250Q944 241 931 232Q919 224 670 88Q388 -65 384 -66Q381 -67 378 -67Q370 -67 365 -61T360 -47Q360 -39 366 -33Q367 -33 400 -15T498 39T625 109L626 110H627L628 111H629L630 112L631 113H632L634 114H635L636 115H637L638 116L639 117H640L641 118H642L643 119H644L645 120L646 121H647L648 122H649L650 123H651L652 124L653 125H654L656 126H657L658 127H659L660 128L661 129H662L663 130H664L665 131H666L667 132L668 133H669L670 134H671L672 135H673L674 136H675L676 137L677 138H678L679 139H680L681 140L683 141L881 251Q368 530 367 533Q360 539 360 547Z"></path></g><g data-mml-node="mtext" transform="translate(2912.8,0)"><path data-c="A0" d=""></path></g><g data-mml-node="mi" transform="translate(3162.8,0)"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mo" transform="translate(3762.8,0)"><path data-c="21" d="M78 661Q78 682 96 699T138 716T180 700T199 661Q199 654 179 432T158 206Q156 198 139 198Q121 198 119 206Q118 209 98 431T78 661ZM79 61Q79 89 97 105T141 121Q164 119 181 104T198 61Q198 31 181 16T139 1Q114 1 97 16T79 61Z"></path></g><g data-mml-node="mtext" transform="translate(4040.8,0)"><path data-c="A0" d=""></path></g><g data-mml-node="mo" transform="translate(4568.6,0)"><path data-c="226B" d="M55 539T55 547T60 561T74 567Q81 567 207 498Q297 449 365 412Q633 265 636 261Q639 255 639 250Q639 241 626 232Q614 224 365 88Q83 -65 79 -66Q76 -67 73 -67Q65 -67 60 -61T55 -47Q55 -39 61 -33Q62 -33 95 -15T193 39T320 109L321 110H322L323 111H324L325 112L326 113H327L329 114H330L331 115H332L333 116L334 117H335L336 118H337L338 119H339L340 120L341 121H342L343 122H344L345 123H346L347 124L348 125H349L351 126H352L353 127H354L355 128L356 129H357L358 130H359L360 131H361L362 132L363 133H364L365 134H366L367 135H368L369 136H370L371 137L372 138H373L374 139H375L376 140L378 141L576 251Q63 530 62 533Q55 539 55 547ZM360 539T360 547T365 561T379 567Q386 567 512 498Q602 449 670 412Q938 265 941 261Q944 255 944 250Q944 241 931 232Q919 224 670 88Q388 -65 384 -66Q381 -67 378 -67Q370 -67 365 -61T360 -47Q360 -39 366 -33Q367 -33 400 -15T498 39T625 109L626 110H627L628 111H629L630 112L631 113H632L634 114H635L636 115H637L638 116L639 117H640L641 118H642L643 119H644L645 120L646 121H647L648 122H649L650 123H651L652 124L653 125H654L656 126H657L658 127H659L660 128L661 129H662L663 130H664L665 131H666L667 132L668 133H669L670 134H671L672 135H673L674 136H675L676 137L677 138H678L679 139H680L681 140L683 141L881 251Q368 530 367 533Q360 539 360 547Z"></path></g><g data-mml-node="mtext" transform="translate(5846.4,0)"><path data-c="A0" d=""></path></g><g data-mml-node="msup" transform="translate(6096.4,0)"><g data-mml-node="mi"><path data-c="1D44E" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path></g><g data-mml-node="TeXAtom" transform="translate(562,413) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g></g></g><g data-mml-node="mo" transform="translate(7410.4,0)"><path data-c="226B" d="M55 539T55 547T60 561T74 567Q81 567 207 498Q297 449 365 412Q633 265 636 261Q639 255 639 250Q639 241 626 232Q614 224 365 88Q83 -65 79 -66Q76 -67 73 -67Q65 -67 60 -61T55 -47Q55 -39 61 -33Q62 -33 95 -15T193 39T320 109L321 110H322L323 111H324L325 112L326 113H327L329 114H330L331 115H332L333 116L334 117H335L336 118H337L338 119H339L340 120L341 121H342L343 122H344L345 123H346L347 124L348 125H349L351 126H352L353 127H354L355 128L356 129H357L358 130H359L360 131H361L362 132L363 133H364L365 134H366L367 135H368L369 136H370L371 137L372 138H373L374 139H375L376 140L378 141L576 251Q63 530 62 533Q55 539 55 547ZM360 539T360 547T365 561T379 567Q386 567 512 498Q602 449 670 412Q938 265 941 261Q944 255 944 250Q944 241 931 232Q919 224 670 88Q388 -65 384 -66Q381 -67 378 -67Q370 -67 365 -61T360 -47Q360 -39 366 -33Q367 -33 400 -15T498 39T625 109L626 110H627L628 111H629L630 112L631 113H632L634 114H635L636 115H637L638 116L639 117H640L641 118H642L643 119H644L645 120L646 121H647L648 122H649L650 123H651L652 124L653 125H654L656 126H657L658 127H659L660 128L661 129H662L663 130H664L665 131H666L667 132L668 133H669L670 134H671L672 135H673L674 136H675L676 137L677 138H678L679 139H680L681 140L683 141L881 251Q368 530 367 533Q360 539 360 547Z"></path></g><g data-mml-node="mtext" transform="translate(8688.2,0)"><path data-c="A0" d=""></path></g><g data-mml-node="msup" transform="translate(8938.2,0)"><g data-mml-node="mi"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="TeXAtom" transform="translate(633,413) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="1D458" d="M121 647Q121 657 125 670T137 683Q138 683 209 688T282 694Q294 694 294 686Q294 679 244 477Q194 279 194 272Q213 282 223 291Q247 309 292 354T362 415Q402 442 438 442Q468 442 485 423T503 369Q503 344 496 327T477 302T456 291T438 288Q418 288 406 299T394 328Q394 353 410 369T442 390L458 393Q446 405 434 405H430Q398 402 367 380T294 316T228 255Q230 254 243 252T267 246T293 238T320 224T342 206T359 180T365 147Q365 130 360 106T354 66Q354 26 381 26Q429 26 459 145Q461 153 479 153H483Q499 153 499 144Q499 139 496 130Q455 -11 378 -11Q333 -11 305 15T277 90Q277 108 280 121T283 145Q283 167 269 183T234 206T200 217T182 220H180Q168 178 159 139T145 81T136 44T129 20T122 7T111 -2Q98 -11 83 -11Q66 -11 57 -1T48 16Q48 26 85 176T158 471L195 616Q196 629 188 632T149 637H144Q134 637 131 637T124 640T121 647Z"></path></g></g></g><g data-mml-node="mtext" transform="translate(9989.6,0)"><path data-c="A0" d=""></path></g><g data-mml-node="mo" transform="translate(10517.4,0)"><path data-c="226B" d="M55 539T55 547T60 561T74 567Q81 567 207 498Q297 449 365 412Q633 265 636 261Q639 255 639 250Q639 241 626 232Q614 224 365 88Q83 -65 79 -66Q76 -67 73 -67Q65 -67 60 -61T55 -47Q55 -39 61 -33Q62 -33 95 -15T193 39T320 109L321 110H322L323 111H324L325 112L326 113H327L329 114H330L331 115H332L333 116L334 117H335L336 118H337L338 119H339L340 120L341 121H342L343 122H344L345 123H346L347 124L348 125H349L351 126H352L353 127H354L355 128L356 129H357L358 130H359L360 131H361L362 132L363 133H364L365 134H366L367 135H368L369 136H370L371 137L372 138H373L374 139H375L376 140L378 141L576 251Q63 530 62 533Q55 539 55 547ZM360 539T360 547T365 561T379 567Q386 567 512 498Q602 449 670 412Q938 265 941 261Q944 255 944 250Q944 241 931 232Q919 224 670 88Q388 -65 384 -66Q381 -67 378 -67Q370 -67 365 -61T360 -47Q360 -39 366 -33Q367 -33 400 -15T498 39T625 109L626 110H627L628 111H629L630 112L631 113H632L634 114H635L636 115H637L638 116L639 117H640L641 118H642L643 119H644L645 120L646 121H647L648 122H649L650 123H651L652 124L653 125H654L656 126H657L658 127H659L660 128L661 129H662L663 130H664L665 131H666L667 132L668 133H669L670 134H671L672 135H673L674 136H675L676 137L677 138H678L679 139H680L681 140L683 141L881 251Q368 530 367 533Q360 539 360 547Z"></path></g><g data-mml-node="mtext" transform="translate(11795.2,0)"><path data-c="A0" d=""></path></g><g data-mml-node="msup" transform="translate(12045.2,0)"><g data-mml-node="mi"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="TeXAtom" transform="translate(633,413) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="1D44E" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path></g></g></g><g data-mml-node="mo" transform="translate(13380,0)"><path data-c="226B" d="M55 539T55 547T60 561T74 567Q81 567 207 498Q297 449 365 412Q633 265 636 261Q639 255 639 250Q639 241 626 232Q614 224 365 88Q83 -65 79 -66Q76 -67 73 -67Q65 -67 60 -61T55 -47Q55 -39 61 -33Q62 -33 95 -15T193 39T320 109L321 110H322L323 111H324L325 112L326 113H327L329 114H330L331 115H332L333 116L334 117H335L336 118H337L338 119H339L340 120L341 121H342L343 122H344L345 123H346L347 124L348 125H349L351 126H352L353 127H354L355 128L356 129H357L358 130H359L360 131H361L362 132L363 133H364L365 134H366L367 135H368L369 136H370L371 137L372 138H373L374 139H375L376 140L378 141L576 251Q63 530 62 533Q55 539 55 547ZM360 539T360 547T365 561T379 567Q386 567 512 498Q602 449 670 412Q938 265 941 261Q944 255 944 250Q944 241 931 232Q919 224 670 88Q388 -65 384 -66Q381 -67 378 -67Q370 -67 365 -61T360 -47Q360 -39 366 -33Q367 -33 400 -15T498 39T625 109L626 110H627L628 111H629L630 112L631 113H632L634 114H635L636 115H637L638 116L639 117H640L641 118H642L643 119H644L645 120L646 121H647L648 122H649L650 123H651L652 124L653 125H654L656 126H657L658 127H659L660 128L661 129H662L663 130H664L665 131H666L667 132L668 133H669L670 134H671L672 135H673L674 136H675L676 137L677 138H678L679 139H680L681 140L683 141L881 251Q368 530 367 533Q360 539 360 547Z"></path></g><g data-mml-node="mi" transform="translate(14657.8,0)"><path data-c="6C" d="M42 46H56Q95 46 103 60V68Q103 77 103 91T103 124T104 167T104 217T104 272T104 329Q104 366 104 407T104 482T104 542T103 586T103 603Q100 622 89 628T44 637H26V660Q26 683 28 683L38 684Q48 685 67 686T104 688Q121 689 141 690T171 693T182 694H185V379Q185 62 186 60Q190 52 198 49Q219 46 247 46H263V0H255L232 1Q209 2 183 2T145 3T107 3T57 1L34 0H26V46H42Z"></path><path data-c="6E" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 122T103 161T103 203Q103 234 103 269T102 328V351Q99 370 88 376T43 385H25V408Q25 431 27 431L37 432Q47 433 65 434T102 436Q119 437 138 438T167 441T178 442H181V402Q181 364 182 364T187 369T199 384T218 402T247 421T285 437Q305 442 336 442Q450 438 463 329Q464 322 464 190V104Q464 66 466 59T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z" transform="translate(278,0)"></path></g><g data-mml-node="mo" transform="translate(15491.8,0)"><path data-c="2061" d=""></path></g><g data-mml-node="mtext" transform="translate(15658.4,0)"><path data-c="A0" d=""></path></g><g data-mml-node="mi" transform="translate(15908.4,0)"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g></g></g></svg></mjx-container></span></p>
+<p>注：</p>
+<ul>
+<li>其中 k&gt;1 , 0&lt;a&lt;1</li>
+<li>调和级数<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>与ln n同阶</li>
+</ul>
+<aside id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
+<hr>
+<ol>
+<li id="fn1"><p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.186ex;" xmlns="http://www.w3.org/2000/svg" width="8.046ex" height="1.505ex" role="img" focusable="false" viewBox="0 -583 3556.4 665"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path></g><g data-mml-node="mo" transform="translate(1000.2,0)"><path data-c="2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path></g><g data-mml-node="mo" transform="translate(2000.4,0)"><path data-c="2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path></g><g data-mml-node="mo" transform="translate(2778.4,0)"><path data-c="2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</aside>
+]]></content>
+      <categories>
+        <category>笔记区</category>
+        <category>高数1笔记</category>
+        <category>杂项</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>枚举法实例</title>
+    <url>/2023/09/28/%E7%AC%94%E8%AE%B0%E5%8C%BA/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AC%94%E8%AE%B0/2.%20%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/%E6%9E%9A%E4%B8%BE%E6%B3%95%E5%AE%9E%E4%BE%8B%20%E2%80%94%E2%80%94%20%E9%80%BB%E8%BE%91%E8%A1%A8%E8%BE%BE%E5%BC%8F%E4%B8%8E%E8%AE%A1%E7%AE%97%E6%80%9D%E7%BB%B4/</url>
+    <content><![CDATA[<p>先来看题</p>
+<figure>
+<img src="https://s2.loli.net/2023/09/25/dKzC369fstuXIpB.jpg" alt="枚举法实例1.jpg">
+<figcaption aria-hidden="true">枚举法实例1.jpg</figcaption>
+</figure>
+<span id="more"></span>
+<p>将四个人的话改为<strong>逻辑表达式</strong>，用a、b、c、d分别表示洞庭、洪泽、鄱阳、太湖。1、2、3、4表示顺序。那么四个人的话用逻辑表达式可化为</p>
+<pre><code>A: a==1 b==4 c==3
+B: b==1 a==4 c==2 d==3
+C: b==4 a==3
+D: c==1 d==4 b==2 a==3</code></pre>
+<p>以A为例，每个人仅答对一个用逻辑表达式化为：</p>
+<pre><code>A:  (a==1)+(b==4)+(c==3) == 1</code></pre>
+<p>然后我们就可以开始暴力啦：</p>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="keyword">define</span> _for(i,a,b) for(i=1;i&lt;=a &amp;&amp; !flag; i++）</span></span><br><span class="line"></span><br><span class="line"><span class="type">int</span> flag=<span class="number">0</span>; <span class="comment">//用于判断是否找到正确答案</span></span><br><span class="line">_for(a,<span class="number">1</span>,<span class="number">4</span>){</span><br><span class="line">	_for(b,<span class="number">1</span>,<span class="number">4</span>){</span><br><span class="line">		<span class="keyword">if</span>(b==a) <span class="keyword">continue</span>; <span class="comment">//防止出现相等</span></span><br><span class="line">		_for(c,<span class="number">1</span>,<span class="number">4</span>){</span><br><span class="line">			<span class="keyword">if</span>(c==a||c==b) <span class="keyword">continue</span>;</span><br><span class="line">			d=<span class="number">10</span>-a-b-c;</span><br><span class="line">			<span class="keyword">if</span>(){ <span class="comment">//里面填刚刚的逻辑表达式</span></span><br><span class="line">				flag=<span class="number">1</span>;</span><br><span class="line">				cout &lt;&lt; a &lt;&lt; <span class="string">' '</span> &lt;&lt; b &lt;&lt; <span class="string">' '</span> &lt;&lt; c &lt;&lt; <span class="string">' '</span> &lt;&lt; d;</span><br><span class="line">			}</span><br><span class="line">		}</span><br><span class="line">	}</span><br><span class="line">}</span><br></pre></td></tr></table></figure>
+<p>这个题的<font color="yellow">优化</font>在于 + 直接把
+<code>flag</code> 写到 <code>for</code> 的判断条件里面去。
+<strong><em>for的里面是可以写很多个的，用逗号隔开</em></strong> +
+continue 优化 + d不需要遍历了，直接减就行</p>
+]]></content>
+      <categories>
+        <category>笔记区</category>
+        <category>程序设计(C++)笔记</category>
+        <category>2. 循环结构</category>
       </categories>
   </entry>
   <entry>
@@ -804,98 +889,44 @@ A。</p>
       </categories>
   </entry>
   <entry>
-    <title>运算符</title>
-    <url>/2023/09/28/%E7%AC%94%E8%AE%B0%E5%8C%BA/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AC%94%E8%AE%B0/1.%20%E5%9F%BA%E7%A1%80%E7%9F%A5%E8%AF%86/%E8%BF%90%E7%AE%97%E7%AC%A6/</url>
-    <content><![CDATA[<h3 id="算术运算符">1. 算术运算符</h3>
-<h4 id="模运算符">模运算符 <code>%</code></h4>
-<ul>
-<li>双目运算符</li>
-<li>操作对象只为整形</li>
-</ul>
-<h4 id="除法运算符">除法运算符 /</h4>
+    <title>贪婪法</title>
+    <url>/2023/09/28/%E7%AC%94%E8%AE%B0%E5%8C%BA/%E7%A8%8B%E5%BA%8F%E8%AE%BE%E8%AE%A1%E7%AC%94%E8%AE%B0/2.%20%E5%BE%AA%E7%8E%AF%E7%BB%93%E6%9E%84/%E8%B4%AA%E5%A9%AA%E6%B3%95/</url>
+    <content><![CDATA[<p>先来看题吧 <img src="https://s2.loli.net/2023/09/25/QcPbqzfjUWypd3v.jpg" alt="硬币找零问题.jpg"></p>
 <span id="more"></span>
-<h4 id="自增自减运算符">自增自减运算符</h4>
-<ul>
-<li>i++ <em>先干活后吃饭</em></li>
-<li>++i <em>先吃饭后干活</em></li>
-</ul>
-<h4 id="复合算术赋值">复合算术赋值</h4>
-<ul>
-<li>i+=1</li>
-</ul>
 <p><br> <br></p>
-<h3 id="关系运算符">2. 关系运算符</h3>
+<h3 id="基本逻辑">基本逻辑</h3>
+<p>在求解过程中每一步都选取一个局部最优策略，把问题规模缩小，最后合起来行程一个全局最优解
+<br> <br></p>
+<h3 id="基本步骤">基本步骤</h3>
 <ul>
-<li><blockquote>
-<p>&lt; &gt;= &lt;=</p>
-</blockquote></li>
-<li>结果为整形</li>
-<li>值只有0，1两种</li>
+<li>从某个初始解出发</li>
+<li>采用迭代的过程，可以向目标前进一步时，根据局部最优策略，得到一个部分解，缩小问题规模。</li>
+<li>将所有解综合起来 <br> <br></li>
 </ul>
+<h3 id="贪婪法思路">贪婪法思路</h3>
+<p>从最大的开始试，最大的超了换第二大的，依次往后。 <br> <br></p>
+<h3 id="程序实现">程序实现</h3>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 懒得敲了</span></span><br></pre></td></tr></table></figure>
 <p><br> <br></p>
-<h3 id="逻辑运算符">3. 逻辑运算符</h3>
-<h4 id="与和或">“与”和“或”（&amp;&amp;、||）</h4>
+<h3 id="需要注意的性质"><strong>需要注意的性质</strong></h3>
 <ul>
-<li>双目运算符</li>
-<li>左结合 #### “非”（！）</li>
-<li>单目运算符</li>
-<li>右结合</li>
+<li>不是动规！不是动规！不是动规！<strong><em>局部解最优并不保证全局解最优</em></strong></li>
+<li>当==局部最优无法带来全局最优==时，就不具备贪心选择的性质，无法用贪婪法得到最优解</li>
+<li>失效的具体案例：当K=27时，贪婪的解为 27=10+10+3+3+1，但是正解应该为
+27=9+9+9 <br> <br></li>
 </ul>
-<p><br> <br></p>
-<h3 id="位运算符"><em>4. 位运算符</em></h3>
-<h4 id="位与">位与 &amp;</h4>
-<ul>
-<li>把两个数二进制相与，两个均为1结果为1</li>
-<li>通常用来把某些位清零或保留某些位 #### 位或 |</li>
-<li>把两个数二进制相或 #### 异或 ^</li>
-<li>两位不相同时为 1，相同时为 0 #### 取反 ~</li>
-<li>按位取反 #### 左移 &lt;&lt;</li>
-<li>二进制向左移n位 #### 右移 &gt;&gt;</li>
-<li>二进制向右移n位</li>
-</ul>
-<p><br> <br></p>
-<h3 id="优先级"><strong><em>5. 优先级</em></strong></h3>
-<p>赋值运算符 逻辑运算符 关系运算符 算数运算符 --------------
-<em>从左到右依次升高</em> ---------------&gt;</p>
-<p>关系运算符的结合型：自左至右</p>
+<h3 id="正解动态规划"><strong><em>正解：动态规划</em></strong></h3>
+<pre><code>令f[k]表示k分钱时需要的 最少的硬币数
+如果取1分钱，则问题变为f[k-1]
+如果取3分钱，则问题变为f[k-3]
+……</code></pre>
+<figure class="highlight c++"><table><tr><td class="code"><pre><span class="line">f[k]= <span class="number">1</span>+ <span class="built_in">min</span>(f[k<span class="number">-1</span>],f[k<span class="number">-3</span>],f[k<span class="number">-9</span>],f[k<span class="number">-10</span>])</span><br></pre></td></tr></table></figure>
+<p>+1表示再拿一枚，min()中即为上一枚里最小的。</p>
 ]]></content>
       <categories>
         <category>笔记区</category>
         <category>程序设计(C++)笔记</category>
-        <category>1. 基础知识</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>一些有用的东东</title>
-    <url>/2023/09/25/%E7%AC%94%E8%AE%B0%E5%8C%BA/%E9%AB%98%E6%95%B01%E7%AC%94%E8%AE%B0/%E6%9D%82%E9%A1%B9/%E4%B8%80%E4%BA%9B%E6%9C%89%E7%94%A8%E7%9A%84%E4%B8%9C%E4%B8%9C/</url>
-    <content><![CDATA[<h2 id="柯西-施瓦茨不等式schwarz">柯西-施瓦茨不等式(Schwarz)</h2>
-<p><del>柯西不等式的NB叫法</del></p>
-<p><span class="math display"><mjx-container class="MathJax" jax="SVG" display="true"><svg style="vertical-align: -2.819ex;" xmlns="http://www.w3.org/2000/svg" width="25.995ex" height="6.354ex" role="img" focusable="false" viewBox="0 -1562.5 11489.8 2808.5"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="munderover"><g data-mml-node="mo"><path data-c="2211" d="M60 948Q63 950 665 950H1267L1325 815Q1384 677 1388 669H1348L1341 683Q1320 724 1285 761Q1235 809 1174 838T1033 881T882 898T699 902H574H543H251L259 891Q722 258 724 252Q725 250 724 246Q721 243 460 -56L196 -356Q196 -357 407 -357Q459 -357 548 -357T676 -358Q812 -358 896 -353T1063 -332T1204 -283T1307 -196Q1328 -170 1348 -124H1388Q1388 -125 1381 -145T1356 -210T1325 -294L1267 -449L666 -450Q64 -450 61 -448Q55 -446 55 -439Q55 -437 57 -433L590 177Q590 178 557 222T452 366T322 544L56 909L55 924Q55 945 60 948Z"></path></g><g data-mml-node="TeXAtom" transform="translate(148.2,-1087.9) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="1D456" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mo" transform="translate(345,0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g><g data-mml-node="mn" transform="translate(1123,0)"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></g></g><g data-mml-node="TeXAtom" transform="translate(509.9,1150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g></g></g><g data-mml-node="msubsup" transform="translate(1610.7,0)"><g data-mml-node="mi"><path data-c="1D44E" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path></g><g data-mml-node="TeXAtom" transform="translate(562,413) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g></g><g data-mml-node="TeXAtom" transform="translate(562,-247) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="1D456" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path></g></g></g><g data-mml-node="munderover" transform="translate(2742.9,0)"><g data-mml-node="mo"><path data-c="2211" d="M60 948Q63 950 665 950H1267L1325 815Q1384 677 1388 669H1348L1341 683Q1320 724 1285 761Q1235 809 1174 838T1033 881T882 898T699 902H574H543H251L259 891Q722 258 724 252Q725 250 724 246Q721 243 460 -56L196 -356Q196 -357 407 -357Q459 -357 548 -357T676 -358Q812 -358 896 -353T1063 -332T1204 -283T1307 -196Q1328 -170 1348 -124H1388Q1388 -125 1381 -145T1356 -210T1325 -294L1267 -449L666 -450Q64 -450 61 -448Q55 -446 55 -439Q55 -437 57 -433L590 177Q590 178 557 222T452 366T322 544L56 909L55 924Q55 945 60 948Z"></path></g><g data-mml-node="TeXAtom" transform="translate(148.2,-1087.9) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="1D456" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mo" transform="translate(345,0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g><g data-mml-node="mn" transform="translate(1123,0)"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></g></g><g data-mml-node="TeXAtom" transform="translate(509.9,1150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g></g></g><g data-mml-node="msubsup" transform="translate(4353.6,0)"><g data-mml-node="mi"><path data-c="1D44F" d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z"></path></g><g data-mml-node="TeXAtom" transform="translate(462,413) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g></g><g data-mml-node="TeXAtom" transform="translate(462,-247) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="1D456" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path></g></g></g><g data-mml-node="mtext" transform="translate(5219.1,0)"><path data-c="A0" d=""></path></g><g data-mml-node="mo" transform="translate(5746.9,0)"><path data-c="2A7E" d="M83 616Q83 624 89 630T99 636Q107 636 253 568T543 431T687 361Q694 356 694 346T687 331Q685 329 395 192L107 56H101Q83 58 83 76Q83 77 83 79Q82 86 98 95Q117 105 248 167Q326 204 378 228L626 346L360 472Q291 505 200 548Q112 589 98 597T83 616ZM674 172Q692 172 694 154Q694 142 687 137Q685 135 395 -2L107 -138H101Q83 -136 83 -118Q83 -106 96 -100Q100 -98 380 35T665 170T674 172Z"></path></g><g data-mml-node="mtext" transform="translate(6802.7,0)"><path data-c="A0" d=""></path></g><g data-mml-node="mo" transform="translate(7052.7,0)"><path data-c="28" d="M94 250Q94 319 104 381T127 488T164 576T202 643T244 695T277 729T302 750H315H319Q333 750 333 741Q333 738 316 720T275 667T226 581T184 443T167 250T184 58T225 -81T274 -167T316 -220T333 -241Q333 -250 318 -250H315H302L274 -226Q180 -141 137 -14T94 250Z"></path></g><g data-mml-node="munderover" transform="translate(7441.7,0)"><g data-mml-node="mo"><path data-c="2211" d="M60 948Q63 950 665 950H1267L1325 815Q1384 677 1388 669H1348L1341 683Q1320 724 1285 761Q1235 809 1174 838T1033 881T882 898T699 902H574H543H251L259 891Q722 258 724 252Q725 250 724 246Q721 243 460 -56L196 -356Q196 -357 407 -357Q459 -357 548 -357T676 -358Q812 -358 896 -353T1063 -332T1204 -283T1307 -196Q1328 -170 1348 -124H1388Q1388 -125 1381 -145T1356 -210T1325 -294L1267 -449L666 -450Q64 -450 61 -448Q55 -446 55 -439Q55 -437 57 -433L590 177Q590 178 557 222T452 366T322 544L56 909L55 924Q55 945 60 948Z"></path></g><g data-mml-node="TeXAtom" transform="translate(148.2,-1087.9) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="1D456" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mo" transform="translate(345,0)"><path data-c="3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path></g><g data-mml-node="mn" transform="translate(1123,0)"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path></g></g><g data-mml-node="TeXAtom" transform="translate(509.9,1150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g></g></g><g data-mml-node="msub" transform="translate(9052.3,0)"><g data-mml-node="mi"><path data-c="1D44E" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path></g><g data-mml-node="TeXAtom" transform="translate(562,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="1D456" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path></g></g></g><g data-mml-node="msub" transform="translate(9908.3,0)"><g data-mml-node="mi"><path data-c="1D44F" d="M73 647Q73 657 77 670T89 683Q90 683 161 688T234 694Q246 694 246 685T212 542Q204 508 195 472T180 418L176 399Q176 396 182 402Q231 442 283 442Q345 442 383 396T422 280Q422 169 343 79T173 -11Q123 -11 82 27T40 150V159Q40 180 48 217T97 414Q147 611 147 623T109 637Q104 637 101 637H96Q86 637 83 637T76 640T73 647ZM336 325V331Q336 405 275 405Q258 405 240 397T207 376T181 352T163 330L157 322L136 236Q114 150 114 114Q114 66 138 42Q154 26 178 26Q211 26 245 58Q270 81 285 114T318 219Q336 291 336 325Z"></path></g><g data-mml-node="TeXAtom" transform="translate(462,-150) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="1D456" d="M184 600Q184 624 203 642T247 661Q265 661 277 649T290 619Q290 596 270 577T226 557Q211 557 198 567T184 600ZM21 287Q21 295 30 318T54 369T98 420T158 442Q197 442 223 419T250 357Q250 340 236 301T196 196T154 83Q149 61 149 51Q149 26 166 26Q175 26 185 29T208 43T235 78T260 137Q263 149 265 151T282 153Q302 153 302 143Q302 135 293 112T268 61T223 11T161 -11Q129 -11 102 10T74 74Q74 91 79 106T122 220Q160 321 166 341T173 380Q173 404 156 404H154Q124 404 99 371T61 287Q60 286 59 284T58 281T56 279T53 278T49 278T41 278H27Q21 284 21 287Z"></path></g></g></g><g data-mml-node="msup" transform="translate(10664.2,0)"><g data-mml-node="mo"><path data-c="29" d="M60 749L64 750Q69 750 74 750H86L114 726Q208 641 251 514T294 250Q294 182 284 119T261 12T224 -76T186 -143T145 -194T113 -227T90 -246Q87 -249 86 -250H74Q66 -250 63 -250T58 -247T55 -238Q56 -237 66 -225Q221 -64 221 250T66 725Q56 737 55 738Q55 746 60 749Z"></path></g><g data-mml-node="TeXAtom" transform="translate(422,413) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mn"><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path></g></g></g></g></g></svg></mjx-container></span></p>
-<h4 id="proof-1韦达定理">Proof 1：韦达定理</h4>
-<p>要证一个平方小于乘积，可以考虑<strong>韦达定理</strong>，构造二次方程
-<em>(<del>初中方法</del> NB方法！)</em></p>
-<span id="more"></span>
-<h4 id="proof-2数学归纳法">Proof 2：数学归纳法</h4>
-<p>没啥好说的，证就完了</p>
-<hr>
-<h2 id="无穷大的阶数">无穷大的阶数</h2>
-<p><span class="math display"><mjx-container class="MathJax" jax="SVG" display="true"><svg style="vertical-align: -0.152ex;" xmlns="http://www.w3.org/2000/svg" width="37.349ex" height="2.196ex" role="img" focusable="false" viewBox="0 -903.7 16508.4 970.7"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="msup"><g data-mml-node="mi"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="TeXAtom" transform="translate(633,413) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g></g></g><g data-mml-node="mtext" transform="translate(1107.3,0)"><path data-c="A0" d=""></path></g><g data-mml-node="mo" transform="translate(1635,0)"><path data-c="226B" d="M55 539T55 547T60 561T74 567Q81 567 207 498Q297 449 365 412Q633 265 636 261Q639 255 639 250Q639 241 626 232Q614 224 365 88Q83 -65 79 -66Q76 -67 73 -67Q65 -67 60 -61T55 -47Q55 -39 61 -33Q62 -33 95 -15T193 39T320 109L321 110H322L323 111H324L325 112L326 113H327L329 114H330L331 115H332L333 116L334 117H335L336 118H337L338 119H339L340 120L341 121H342L343 122H344L345 123H346L347 124L348 125H349L351 126H352L353 127H354L355 128L356 129H357L358 130H359L360 131H361L362 132L363 133H364L365 134H366L367 135H368L369 136H370L371 137L372 138H373L374 139H375L376 140L378 141L576 251Q63 530 62 533Q55 539 55 547ZM360 539T360 547T365 561T379 567Q386 567 512 498Q602 449 670 412Q938 265 941 261Q944 255 944 250Q944 241 931 232Q919 224 670 88Q388 -65 384 -66Q381 -67 378 -67Q370 -67 365 -61T360 -47Q360 -39 366 -33Q367 -33 400 -15T498 39T625 109L626 110H627L628 111H629L630 112L631 113H632L634 114H635L636 115H637L638 116L639 117H640L641 118H642L643 119H644L645 120L646 121H647L648 122H649L650 123H651L652 124L653 125H654L656 126H657L658 127H659L660 128L661 129H662L663 130H664L665 131H666L667 132L668 133H669L670 134H671L672 135H673L674 136H675L676 137L677 138H678L679 139H680L681 140L683 141L881 251Q368 530 367 533Q360 539 360 547Z"></path></g><g data-mml-node="mtext" transform="translate(2912.8,0)"><path data-c="A0" d=""></path></g><g data-mml-node="mi" transform="translate(3162.8,0)"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="mo" transform="translate(3762.8,0)"><path data-c="21" d="M78 661Q78 682 96 699T138 716T180 700T199 661Q199 654 179 432T158 206Q156 198 139 198Q121 198 119 206Q118 209 98 431T78 661ZM79 61Q79 89 97 105T141 121Q164 119 181 104T198 61Q198 31 181 16T139 1Q114 1 97 16T79 61Z"></path></g><g data-mml-node="mtext" transform="translate(4040.8,0)"><path data-c="A0" d=""></path></g><g data-mml-node="mo" transform="translate(4568.6,0)"><path data-c="226B" d="M55 539T55 547T60 561T74 567Q81 567 207 498Q297 449 365 412Q633 265 636 261Q639 255 639 250Q639 241 626 232Q614 224 365 88Q83 -65 79 -66Q76 -67 73 -67Q65 -67 60 -61T55 -47Q55 -39 61 -33Q62 -33 95 -15T193 39T320 109L321 110H322L323 111H324L325 112L326 113H327L329 114H330L331 115H332L333 116L334 117H335L336 118H337L338 119H339L340 120L341 121H342L343 122H344L345 123H346L347 124L348 125H349L351 126H352L353 127H354L355 128L356 129H357L358 130H359L360 131H361L362 132L363 133H364L365 134H366L367 135H368L369 136H370L371 137L372 138H373L374 139H375L376 140L378 141L576 251Q63 530 62 533Q55 539 55 547ZM360 539T360 547T365 561T379 567Q386 567 512 498Q602 449 670 412Q938 265 941 261Q944 255 944 250Q944 241 931 232Q919 224 670 88Q388 -65 384 -66Q381 -67 378 -67Q370 -67 365 -61T360 -47Q360 -39 366 -33Q367 -33 400 -15T498 39T625 109L626 110H627L628 111H629L630 112L631 113H632L634 114H635L636 115H637L638 116L639 117H640L641 118H642L643 119H644L645 120L646 121H647L648 122H649L650 123H651L652 124L653 125H654L656 126H657L658 127H659L660 128L661 129H662L663 130H664L665 131H666L667 132L668 133H669L670 134H671L672 135H673L674 136H675L676 137L677 138H678L679 139H680L681 140L683 141L881 251Q368 530 367 533Q360 539 360 547Z"></path></g><g data-mml-node="mtext" transform="translate(5846.4,0)"><path data-c="A0" d=""></path></g><g data-mml-node="msup" transform="translate(6096.4,0)"><g data-mml-node="mi"><path data-c="1D44E" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path></g><g data-mml-node="TeXAtom" transform="translate(562,413) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g></g></g><g data-mml-node="mo" transform="translate(7410.4,0)"><path data-c="226B" d="M55 539T55 547T60 561T74 567Q81 567 207 498Q297 449 365 412Q633 265 636 261Q639 255 639 250Q639 241 626 232Q614 224 365 88Q83 -65 79 -66Q76 -67 73 -67Q65 -67 60 -61T55 -47Q55 -39 61 -33Q62 -33 95 -15T193 39T320 109L321 110H322L323 111H324L325 112L326 113H327L329 114H330L331 115H332L333 116L334 117H335L336 118H337L338 119H339L340 120L341 121H342L343 122H344L345 123H346L347 124L348 125H349L351 126H352L353 127H354L355 128L356 129H357L358 130H359L360 131H361L362 132L363 133H364L365 134H366L367 135H368L369 136H370L371 137L372 138H373L374 139H375L376 140L378 141L576 251Q63 530 62 533Q55 539 55 547ZM360 539T360 547T365 561T379 567Q386 567 512 498Q602 449 670 412Q938 265 941 261Q944 255 944 250Q944 241 931 232Q919 224 670 88Q388 -65 384 -66Q381 -67 378 -67Q370 -67 365 -61T360 -47Q360 -39 366 -33Q367 -33 400 -15T498 39T625 109L626 110H627L628 111H629L630 112L631 113H632L634 114H635L636 115H637L638 116L639 117H640L641 118H642L643 119H644L645 120L646 121H647L648 122H649L650 123H651L652 124L653 125H654L656 126H657L658 127H659L660 128L661 129H662L663 130H664L665 131H666L667 132L668 133H669L670 134H671L672 135H673L674 136H675L676 137L677 138H678L679 139H680L681 140L683 141L881 251Q368 530 367 533Q360 539 360 547Z"></path></g><g data-mml-node="mtext" transform="translate(8688.2,0)"><path data-c="A0" d=""></path></g><g data-mml-node="msup" transform="translate(8938.2,0)"><g data-mml-node="mi"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="TeXAtom" transform="translate(633,413) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="1D458" d="M121 647Q121 657 125 670T137 683Q138 683 209 688T282 694Q294 694 294 686Q294 679 244 477Q194 279 194 272Q213 282 223 291Q247 309 292 354T362 415Q402 442 438 442Q468 442 485 423T503 369Q503 344 496 327T477 302T456 291T438 288Q418 288 406 299T394 328Q394 353 410 369T442 390L458 393Q446 405 434 405H430Q398 402 367 380T294 316T228 255Q230 254 243 252T267 246T293 238T320 224T342 206T359 180T365 147Q365 130 360 106T354 66Q354 26 381 26Q429 26 459 145Q461 153 479 153H483Q499 153 499 144Q499 139 496 130Q455 -11 378 -11Q333 -11 305 15T277 90Q277 108 280 121T283 145Q283 167 269 183T234 206T200 217T182 220H180Q168 178 159 139T145 81T136 44T129 20T122 7T111 -2Q98 -11 83 -11Q66 -11 57 -1T48 16Q48 26 85 176T158 471L195 616Q196 629 188 632T149 637H144Q134 637 131 637T124 640T121 647Z"></path></g></g></g><g data-mml-node="mtext" transform="translate(9989.6,0)"><path data-c="A0" d=""></path></g><g data-mml-node="mo" transform="translate(10517.4,0)"><path data-c="226B" d="M55 539T55 547T60 561T74 567Q81 567 207 498Q297 449 365 412Q633 265 636 261Q639 255 639 250Q639 241 626 232Q614 224 365 88Q83 -65 79 -66Q76 -67 73 -67Q65 -67 60 -61T55 -47Q55 -39 61 -33Q62 -33 95 -15T193 39T320 109L321 110H322L323 111H324L325 112L326 113H327L329 114H330L331 115H332L333 116L334 117H335L336 118H337L338 119H339L340 120L341 121H342L343 122H344L345 123H346L347 124L348 125H349L351 126H352L353 127H354L355 128L356 129H357L358 130H359L360 131H361L362 132L363 133H364L365 134H366L367 135H368L369 136H370L371 137L372 138H373L374 139H375L376 140L378 141L576 251Q63 530 62 533Q55 539 55 547ZM360 539T360 547T365 561T379 567Q386 567 512 498Q602 449 670 412Q938 265 941 261Q944 255 944 250Q944 241 931 232Q919 224 670 88Q388 -65 384 -66Q381 -67 378 -67Q370 -67 365 -61T360 -47Q360 -39 366 -33Q367 -33 400 -15T498 39T625 109L626 110H627L628 111H629L630 112L631 113H632L634 114H635L636 115H637L638 116L639 117H640L641 118H642L643 119H644L645 120L646 121H647L648 122H649L650 123H651L652 124L653 125H654L656 126H657L658 127H659L660 128L661 129H662L663 130H664L665 131H666L667 132L668 133H669L670 134H671L672 135H673L674 136H675L676 137L677 138H678L679 139H680L681 140L683 141L881 251Q368 530 367 533Q360 539 360 547Z"></path></g><g data-mml-node="mtext" transform="translate(11795.2,0)"><path data-c="A0" d=""></path></g><g data-mml-node="msup" transform="translate(12045.2,0)"><g data-mml-node="mi"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g><g data-mml-node="TeXAtom" transform="translate(633,413) scale(0.707)" data-mjx-texclass="ORD"><g data-mml-node="mi"><path data-c="1D44E" d="M33 157Q33 258 109 349T280 441Q331 441 370 392Q386 422 416 422Q429 422 439 414T449 394Q449 381 412 234T374 68Q374 43 381 35T402 26Q411 27 422 35Q443 55 463 131Q469 151 473 152Q475 153 483 153H487Q506 153 506 144Q506 138 501 117T481 63T449 13Q436 0 417 -8Q409 -10 393 -10Q359 -10 336 5T306 36L300 51Q299 52 296 50Q294 48 292 46Q233 -10 172 -10Q117 -10 75 30T33 157ZM351 328Q351 334 346 350T323 385T277 405Q242 405 210 374T160 293Q131 214 119 129Q119 126 119 118T118 106Q118 61 136 44T179 26Q217 26 254 59T298 110Q300 114 325 217T351 328Z"></path></g></g></g><g data-mml-node="mo" transform="translate(13380,0)"><path data-c="226B" d="M55 539T55 547T60 561T74 567Q81 567 207 498Q297 449 365 412Q633 265 636 261Q639 255 639 250Q639 241 626 232Q614 224 365 88Q83 -65 79 -66Q76 -67 73 -67Q65 -67 60 -61T55 -47Q55 -39 61 -33Q62 -33 95 -15T193 39T320 109L321 110H322L323 111H324L325 112L326 113H327L329 114H330L331 115H332L333 116L334 117H335L336 118H337L338 119H339L340 120L341 121H342L343 122H344L345 123H346L347 124L348 125H349L351 126H352L353 127H354L355 128L356 129H357L358 130H359L360 131H361L362 132L363 133H364L365 134H366L367 135H368L369 136H370L371 137L372 138H373L374 139H375L376 140L378 141L576 251Q63 530 62 533Q55 539 55 547ZM360 539T360 547T365 561T379 567Q386 567 512 498Q602 449 670 412Q938 265 941 261Q944 255 944 250Q944 241 931 232Q919 224 670 88Q388 -65 384 -66Q381 -67 378 -67Q370 -67 365 -61T360 -47Q360 -39 366 -33Q367 -33 400 -15T498 39T625 109L626 110H627L628 111H629L630 112L631 113H632L634 114H635L636 115H637L638 116L639 117H640L641 118H642L643 119H644L645 120L646 121H647L648 122H649L650 123H651L652 124L653 125H654L656 126H657L658 127H659L660 128L661 129H662L663 130H664L665 131H666L667 132L668 133H669L670 134H671L672 135H673L674 136H675L676 137L677 138H678L679 139H680L681 140L683 141L881 251Q368 530 367 533Q360 539 360 547Z"></path></g><g data-mml-node="mi" transform="translate(14657.8,0)"><path data-c="6C" d="M42 46H56Q95 46 103 60V68Q103 77 103 91T103 124T104 167T104 217T104 272T104 329Q104 366 104 407T104 482T104 542T103 586T103 603Q100 622 89 628T44 637H26V660Q26 683 28 683L38 684Q48 685 67 686T104 688Q121 689 141 690T171 693T182 694H185V379Q185 62 186 60Q190 52 198 49Q219 46 247 46H263V0H255L232 1Q209 2 183 2T145 3T107 3T57 1L34 0H26V46H42Z"></path><path data-c="6E" d="M41 46H55Q94 46 102 60V68Q102 77 102 91T102 122T103 161T103 203Q103 234 103 269T102 328V351Q99 370 88 376T43 385H25V408Q25 431 27 431L37 432Q47 433 65 434T102 436Q119 437 138 438T167 441T178 442H181V402Q181 364 182 364T187 369T199 384T218 402T247 421T285 437Q305 442 336 442Q450 438 463 329Q464 322 464 190V104Q464 66 466 59T477 49Q498 46 526 46H542V0H534L510 1Q487 2 460 2T422 3Q319 3 310 0H302V46H318Q379 46 379 62Q380 64 380 200Q379 335 378 343Q372 371 358 385T334 402T308 404Q263 404 229 370Q202 343 195 315T187 232V168V108Q187 78 188 68T191 55T200 49Q221 46 249 46H265V0H257L234 1Q210 2 183 2T145 3Q42 3 33 0H25V46H41Z" transform="translate(278,0)"></path></g><g data-mml-node="mo" transform="translate(15491.8,0)"><path data-c="2061" d=""></path></g><g data-mml-node="mtext" transform="translate(15658.4,0)"><path data-c="A0" d=""></path></g><g data-mml-node="mi" transform="translate(15908.4,0)"><path data-c="1D45B" d="M21 287Q22 293 24 303T36 341T56 388T89 425T135 442Q171 442 195 424T225 390T231 369Q231 367 232 367L243 378Q304 442 382 442Q436 442 469 415T503 336T465 179T427 52Q427 26 444 26Q450 26 453 27Q482 32 505 65T540 145Q542 153 560 153Q580 153 580 145Q580 144 576 130Q568 101 554 73T508 17T439 -10Q392 -10 371 17T350 73Q350 92 386 193T423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 180T152 343Q153 348 153 366Q153 405 129 405Q91 405 66 305Q60 285 60 284Q58 278 41 278H27Q21 284 21 287Z"></path></g></g></g></svg></mjx-container></span></p>
-<p>注：</p>
-<ul>
-<li>其中 k&gt;1 , 0&lt;a&lt;1</li>
-<li>调和级数<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>与ln n同阶</li>
-</ul>
-<aside id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes">
-<hr>
-<ol>
-<li id="fn1"><p><mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.186ex;" xmlns="http://www.w3.org/2000/svg" width="8.046ex" height="1.505ex" role="img" focusable="false" viewBox="0 -583 3556.4 665"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mo"><path data-c="2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path></g><g data-mml-node="mo" transform="translate(1000.2,0)"><path data-c="2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path></g><g data-mml-node="mo" transform="translate(2000.4,0)"><path data-c="2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path></g><g data-mml-node="mo" transform="translate(2778.4,0)"><path data-c="2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path></g></g></g></svg></mjx-container><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-</ol>
-</aside>
-]]></content>
-      <categories>
-        <category>笔记区</category>
-        <category>高数1笔记</category>
-        <category>杂项</category>
+        <category>2. 循环结构</category>
       </categories>
   </entry>
 </search>
